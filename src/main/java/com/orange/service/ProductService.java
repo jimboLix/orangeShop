@@ -1,0 +1,35 @@
+package com.orange.service;
+
+import com.orange.bean.product.Product;
+import com.orange.bean.vo.ProductVo;
+
+import java.util.List;
+
+/**
+ * @author fengyan.li
+ * @version V1.0
+ * @Description: ${todo}(用一句话描述该文件做什么)
+ * @date 2017/4/30
+ */
+public interface ProductService {
+
+    /**
+     * 获取所有条数
+     * @param productQuery
+     * @return
+     */
+    int getProductListCount(ProductVo productQuery);
+
+    /**
+     * 分页查询
+     * @param productVo
+     * @return
+     */
+    List<Product> getProductListWithPage(ProductVo productVo);
+
+    /**
+     * 添加
+     * @param product
+     */
+    public Integer addProduct(Product product);
+}

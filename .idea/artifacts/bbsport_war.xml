@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bbsport:war">
+    <output-path>F:/train/bbsport/target</output-path>
+    <root id="archive" name="bbsport.war">
+      <element id="artifact" artifact-name="bbsport:war exploded" />
+    </root>
+  </artifact>
+</component>
