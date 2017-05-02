@@ -19,14 +19,14 @@ public class Product implements Serializable {
 	private String no;
 	private String name;
 	private Double weight;
-	private Integer isNew = 0;
-	private Integer isHot = 0;
+	private Integer isNew;
+	private Integer isHot;
 	private Integer isCommend;
 	private Date createTime;
 	private String createUserId;
 	private Date checkTime;
 	private String checkUserId;
-	private Integer isShow = 0;
+	private Integer isShow = 1;
 	private Integer isDel = 1;
 	private Integer typeId;
 	private Integer brandId;
@@ -37,7 +37,17 @@ public class Product implements Serializable {
 	private String feature;//
 	private String color;//9,10,11,12
 	private String size;//S,L,XXL
-	
+	//商品类别
+	private Integer classId;
+
+	public Integer getClassId() {
+		return classId;
+	}
+
+	public void setClassId(Integer classId) {
+		this.classId = classId;
+	}
+
 	//添加外部对象
 	private Img img;
 	

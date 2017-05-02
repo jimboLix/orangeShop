@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.orange.service.TypeServiceTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-SRQCU2S" time="0.0">
+  <properties/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[2017-05-02 20:28:57,667][INFO ][org.springframework.test.context.support.DefaultTestContextBootstrapper:260] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[2017-05-02 20:28:57,669][INFO ][org.springframework.test.context.support.DefaultTestContextBootstrapper:187] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4796d7b9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@163fcc1f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@aea8044, org.springframework.test.context.support.DirtiesContextTestExecutionListener@28f4210d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@59ae10b5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@311970ab]
+]]></system-err>
+</testsuite>
