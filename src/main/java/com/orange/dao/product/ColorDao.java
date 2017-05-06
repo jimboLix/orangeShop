@@ -15,7 +15,7 @@ public interface ColorDao {
 
 	/**
 	 * 根据主键查找
-	 * @param colorQuery
+	 * @param id
 	 */
 	public Color getColorByKey(Integer id);
 

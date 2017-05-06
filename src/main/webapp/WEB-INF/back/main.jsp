@@ -1,12 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title></title>
-    <c:import url="common.jsp"/>
+    <%@include file="common.jsp"%>
     <script>
         $(function () {
-            alert($("#result").val());
         })
     </script>
 </head>

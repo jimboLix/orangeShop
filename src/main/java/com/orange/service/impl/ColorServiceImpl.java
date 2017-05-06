@@ -22,4 +22,12 @@ public class ColorServiceImpl implements ColorService {
     public List<Color> getColorList(Color colorQuery) {
         return colorDao.getColorList(colorQuery);
     }
+
+    @Override
+    public Color getColorByKey(Integer id) {
+        if (id != null){
+            return colorDao.getColorByKey(id);
+        }
+        return null;
+    }
 }

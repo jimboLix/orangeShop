@@ -36,11 +36,14 @@
 
     <sql id="condition">
         <where>
+            <if test="id != null and id !=''">
+                id=#{id}
+            </if>
             <if test="isHot != null">
-                is_hot=#{isHot}
+                AND is_hot=#{isHot}
             </if>
             <if test="no != null and no !=''">
-                no=#{no}
+                AND no=#{no}
             </if>
             <if test="name != null and name != ''">
                     AND name like '%${name}%'
@@ -220,4 +223,29 @@
             </if>
         </trim>
     </insert>
+
+    <update id="update" parameterType="com.orange.bean.product.Product">
+        update t_product
+        <set>
+            <trim suffixOverrides=",">
+                <if test="name != null and name !=''">
+                    name = #{name},
+                </if>
+                <if test="isHot !=null and isHot !=''">
+                    is_hot=#{isHot},
+                </if>
+                <if test="isNew != null and isNew !=''">
+                    is_new=#{isNew},
+                </if>
+                <if test="weight != null and weight !=''">
+                    weight=#{weight}
+                </if>
+            </trim>
+        </set>
+        <where>
+            <if test="id !=null and id !=''">
+                id=#{id}
+            </if>
+        </where>
+    </update>
 </mapper>

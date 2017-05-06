@@ -1,9 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title></title>
-    <c:import url="common.jsp"/>
+    <%@include file="common.jsp"%>
+    <script>
+        $(function () {
+        })
+    </script>
 </head>
 <body class="easyui-layout">
 <!-- begin of header -->
@@ -12,7 +16,7 @@
         <h1>电商后台管理系统</h1>
     </div>
     <div class="wu-header-right">
-        <p><strong class="easyui-tooltip" title="2条未读消息">admin</strong>，欢迎您！</p>
+        <p><strong class="easyui-tooltip">admin</strong>，欢迎您！</p>
         <p><a href="#">网站首页</a>|<a href="#">支持论坛</a>|<a href="#">帮助中心</a>|<a href="#">安全退出</a></p>
     </div>
 </div>
@@ -24,7 +28,7 @@
             <ul class="easyui-tree wu-side-tree">
                 <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="${base}/product/list.do" iframe="0">商品列表</a></li>
                 <li iconCls="icon-users"><a href="javascript:void(0)" data-icon="icon-users" data-link="${base}/product/toAdd.do" iframe="0">添加商品</a></li>
-                <li iconCls="icon-user-group"><a href="javascript:void(0)" data-icon="icon-user-group" data-link="temp/layout-3.html" iframe="0">导航标题</a></li>
+                <li iconCls="icon-user-group"><a href="javascript:void(0)" data-icon="icon-user-group" data-link="${base}/class/list.do" iframe="0">分类管理</a></li>
                 <li iconCls="icon-book"><a href="javascript:void(0)" data-icon="icon-book" data-link="temp/layout-3.html" iframe="0">导航标题</a></li>
                 <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="temp/layout-3.html" iframe="0">导航标题</a></li>
                 <li iconCls="icon-application-osx-error"><a href="javascript:void(0)" data-icon="icon-application-osx-error" data-link="temp/layout-3.html" iframe="0">导航标题</a></li>
@@ -41,6 +45,7 @@
             </ul>
         </div>
     </div>
+    <input type="hidden" id="result" value="${result}">
 </div>
 <!-- end of sidebar -->
 <!-- begin of main -->

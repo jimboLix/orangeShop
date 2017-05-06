@@ -39,7 +39,7 @@
     </sql>
 
     <!-- 根据主键查询 -->
-    <select id="getColorByKey" resultMap="color" parameterType="hashMap">
+    <select id="getColorByKey" resultMap="color" parameterType="Integer">
         SELECT id,name,parent_id,img_url FROM t_color
         WHERE
         id=#{id}

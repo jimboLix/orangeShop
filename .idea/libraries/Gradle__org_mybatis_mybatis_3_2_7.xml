@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: org.mybatis:mybatis:3.2.7">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.2.7/37e87ae533c834ba0692f9aa695549c1043a531c/mybatis-3.2.7.jar!/" />
+      <root url="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

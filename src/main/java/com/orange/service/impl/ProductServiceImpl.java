@@ -71,4 +71,11 @@ public class ProductServiceImpl implements ProductService {
         }
         return productId;
     }
+
+    @Override
+    public void update(Product product) {
+        if(product != null){
+            productDao.update(product);
+        }
+    }
 }

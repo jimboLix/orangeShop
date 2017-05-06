@@ -57,9 +57,6 @@
                 }
             });
         });
-        if($("#result").value){
-            alert("商品添加成功！");
-        }
     })
     //使用Jquery.form进行异步提交，上传图片
     function uploadPic(){

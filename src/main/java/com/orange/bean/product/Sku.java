@@ -1,5 +1,7 @@
 package com.orange.bean.product;
 
+import com.orange.bean.PageBean;
+
 import java.util.*;
 import java.io.Serializable;
 
@@ -7,7 +9,7 @@ import java.io.Serializable;
 /**
  * 最小销售单元
  */
-public class Sku implements Serializable {
+public class Sku extends PageBean implements Serializable {
 	/**
 	 * 序列化ID
 	 */

@@ -32,4 +32,10 @@ public interface ProductService {
      * @param product
      */
     public Integer addProduct(Product product);
+
+    /**
+     * 更新
+     * @param product
+     */
+    void update(Product product);
 }

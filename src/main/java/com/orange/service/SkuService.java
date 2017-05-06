@@ -2,6 +2,8 @@ package com.orange.service;
 
 import com.orange.bean.product.Sku;
 
+import java.util.List;
+
 /**
  * @author fengyan.li
  * @version V1.0
@@ -14,4 +16,22 @@ public interface SkuService {
      * @param sku
      */
     public Integer addSku(Sku sku);
+
+    /**
+     * 总条数
+     * @param skuQuery
+     */
+    public int getSkuListCount(Sku skuQuery);
+
+    /**
+     * 分页查询
+     * @param skuQuery
+     */
+    public List<Sku> getSkuListWithPage(Sku skuQuery);
+
+    /**
+     * 根据主键更新
+     * @param sku
+     */
+    public Integer updateSkuByKey(Sku sku);
 }

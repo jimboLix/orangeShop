@@ -1,164 +1,93 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <c:import url="../common.jsp"/>
+    <%@include file="../common.jsp"%>
     <title>Title</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
 <div class="easyui-layout" data-options="fit:true">
+    <div id="wu-dialog-2"></div>
     <!-- Begin of toolbar -->
     <div id="wu-toolbar-2">
         <div class="wu-toolbar-button">
-            <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAdd()" plain="true">添加</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openSku()" plain="true">库存管理</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEdit()" plain="true">修改</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="remove()" plain="true">删除</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="remove()" plain="true">下架</a>
         </div>
         <div class="wu-toolbar-search">
-            <label>商品名称：</label><input class="wu-text" style="width:100px">
-            <label>商品编号：</label><input class="wu-text" style="width:100px">
+            <form id="jvForm">
+            <label>商品名称：</label><input class="wu-text" style="width:400px;height: 20px" name="name" value="${name}">
+            <label>商品编号：</label><input class="wu-text" style="width:200px;height: 20px" name="no" value="${no}">
             <label>是否上架：</label>
-            <select class="easyui-combobox" panelHeight="auto" style="width:100px">
-                <option value="0">是</option>
-                <option value="1">否</option>
+            <select class="easyui-combobox" panelHeight="auto" style="width:80px;height: 20px" name="isShow">
+                <option value="0" <c:if test="${isShow == 0}">selected="selected"</c:if>>否</option>
+                <option value="1" <c:if test="${isShow == 1}">selected="selected"</c:if>>是</option>
             </select>
-            <label>关键词：</label><input class="wu-text" style="width:100px">
-            <a href="#" class="easyui-linkbutton" iconCls="icon-search">开始检索</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-search" id="search" onclick="searchProduct()">开始检索</a>
+            </form>
         </div>
     </div>
     <!-- End of toolbar -->
-    <table id="wu-datagrid-2" class="easyui-datagrid" toolbar="#wu-toolbar-2"></table>
+    <table id="datagrid" class="easyui-datagrid" toolbar="#wu-toolbar-2"></table>
 </div>
 <!-- End of easyui-dialog -->
 <script type="text/javascript">
-    /**
-     * Name 添加记录
-     */
-    function add(){
-        $('#wu-form-2').form('submit', {
-            url:'',
-            success:function(data){
-                if(data){
-                    $.messager.alert('信息提示','提交成功！','info');
-                    $('#wu-dialog-2').dialog('close');
-                }
-                else
-                {
-                    $.messager.alert('信息提示','提交失败！','info');
-                }
-            }
-        });
-    }
 
-    /**
-     * Name 修改记录
-     */
-    function edit(){
-        $('#wu-form-2').form('submit', {
-            url:'',
-            success:function(data){
-                if(data){
-                    $.messager.alert('信息提示','提交成功！','info');
-                    $('#wu-dialog-2').dialog('close');
-                }
-                else
-                {
-                    $.messager.alert('信息提示','提交失败！','info');
-                }
-            }
-        });
+    function searchProduct() {
+        var formdata = $("#jvForm").serializeJson();
+        $('#datagrid').datagrid('load',formdata);
     }
-
-    /**
-     * Name 删除记录
-     */
-    function remove(){
-        $.messager.confirm('信息提示','确定要删除该记录？', function(result){
-            if(result){
-                var items = $('#wu-datagrid-2').datagrid('getSelections');
-                var ids = [];
-                $(items).each(function(){
-                    ids.push(this.productid);
-                });
-                //alert(ids);return;
-                $.ajax({
-                    url:'',
-                    data:'',
-                    success:function(data){
-                        if(data){
-                            $.messager.alert('信息提示','删除成功！','info');
-                        }
-                        else
-                        {
-                            $.messager.alert('信息提示','删除失败！','info');
-                        }
-                    }
-                });
-            }
-        });
+    function getSelected() {
+       var checkItems = $("#datagrid").datagrid("getChecked");
+       var ids = [];
+       $.each(checkItems,function(index,item){
+           ids.push(item.id);
+       });
+       return ids;
     }
 
     /**
      * Name 打开添加窗口
      */
-    function openAdd(){
-        $('#wu-form-2').form('clear');
+    function openSku(){
+        var checkItems = $("#datagrid").datagrid("getChecked");
+        var ids = [];
+        $.each(checkItems,function(index,item){
+            ids.push(item.id);
+        });
+        if(ids.length > 1){
+            $.messager.alert("Warning","只能选择一个！");
+            return;
+        }else{
         $('#wu-dialog-2').dialog({
             closed: false,
             modal:true,
-            title: "添加信息",
+            width: 800,
+            height:600,
+            title: "库存管理",
+            href:'${base}/sku/list.do?id='+ids,
             buttons: [{
                 text: '确定',
                 iconCls: 'icon-ok',
-                handler: add
+                handler: function () {
+                    $('#wu-dialog-2').dialog('close');
+                }
             }, {
                 text: '取消',
                 iconCls: 'icon-cancel',
                 handler: function () {
                     $('#wu-dialog-2').dialog('close');
+                    $('#datagrid').datagrid('reload');
                 }
             }]
         });
+        <%--$('#dd').dialog('refresh', '${base}/sku/list.do');--%>
+        return;
+    }
     }
 
-    /**
-     * Name 打开修改窗口
-     */
-    function openEdit(){
-        $('#wu-form-2').form('clear');
-        var item = $('#wu-datagrid-2').datagrid('getSelected');
-        //alert(item.productid);return;
-        $.ajax({
-            url:'',
-            data:'',
-            success:function(data){
-                if(data){
-                    $('#wu-dialog-2').dialog('close');
-                }
-                else{
-                    //绑定值
-                    $('#wu-form-2').form('load', data)
-                }
-            }
-        });
-        $('#wu-dialog-2').dialog({
-            closed: false,
-            modal:true,
-            title: "修改信息",
-            buttons: [{
-                text: '确定',
-                iconCls: 'icon-ok',
-                handler: edit
-            }, {
-                text: '取消',
-                iconCls: 'icon-cancel',
-                handler: function () {
-                    $('#wu-dialog-2').dialog('close');
-                }
-            }]
-        });
-    }
 
     /**
      * Name 分页过滤器
@@ -193,7 +122,7 @@
     /**
      * Name 载入数据
      */
-    $('#wu-datagrid-2').datagrid({
+    $('#datagrid').datagrid({
         url:'${base}/product/page.do',
 //        loadFilter:pagerFilter,
         rownumbers:true,
@@ -203,26 +132,27 @@
         multiSort:true,
         fitColumns:true,
         fit:true,
+        idField:'id',
         columns:[[
             { checkbox:true},
             { field:'no',title:'编号',width:100,sortable:true},
-            { field:'name',title:'商品名称',width:200,sortable:true},
-            { field:'weight',title:'商品重量',width:100},
-            { field:'isNew',title:'是否新款',width:100,formatter : function(value, row, index) {
+            { field:'name',title:'商品名称',width:400,sortable:true},
+            { field:'weight',title:'商品重量',width:50},
+            { field:'isNew',title:'是否新款',width:50,formatter : function(value, row, index) {
                 if(value =='1'){
                     return "新款";
                 }else if(value =='0'){
                     return "否";
                 }
             }},
-            { field:'isHot',title:'是否热卖',width:100,formatter : function(value, row, index) {
+            { field:'isHot',title:'是否热卖',width:50,formatter : function(value, row, index) {
                 if(value =='1'){
                     return "热卖";
                 }else if(value =='0'){
                     return "否";
                 }
             }},
-            { field:'isShow',title:'是否上架',width:100,formatter : function(value, row, index) {
+            { field:'isShow',title:'是否上架',width:50,formatter : function(value, row, index) {
                 if(value =='1'){
                     return "上架";
                 }else if(value =='0'){
@@ -231,6 +161,46 @@
             }}
         ]]
     });
+
+    /**
+     * Name 打开修改窗口
+     */
+    function openEdit(){
+        $('#wu-form-2').form('clear');
+        var item = $('#datagrid').datagrid('getSelected');
+        $('#wu-dialog-2').dialog({
+            closed: false,
+            modal:true,
+            title: "商品修改",
+            width: 500,
+            height:300,
+            href:'${base}/product/toEdit.do?id='+item.id,
+        });
+    }
+    function closeDialog() {
+        $('#datagrid').datagrid('reload');
+        $('#wu-dialog-2').dialog('close');
+    }
+    //将表单数据转化为json，百度荡的
+    (function($){
+        $.fn.serializeJson=function(){
+            var serializeObj={};
+            var array=this.serializeArray();
+            var str=this.serialize();
+            $(array).each(function(){
+                if(serializeObj[this.name]){
+                    if($.isArray(serializeObj[this.name])){
+                        serializeObj[this.name].push(this.value);
+                    }else{
+                        serializeObj[this.name]=[serializeObj[this.name],this.value];
+                    }
+                }else{
+                    serializeObj[this.name]=this.value;
+                }
+            });
+            return serializeObj;
+        };
+    })(jQuery);
 </script>
 </body>
 </html>

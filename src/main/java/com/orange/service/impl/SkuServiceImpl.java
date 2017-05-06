@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author fengyan.li
@@ -23,5 +24,23 @@ public class SkuServiceImpl implements SkuService {
     @Transactional
     public Integer addSku(Sku sku) {
         return skuDao.addSku(sku);
+    }
+
+    @Override
+    public int getSkuListCount(Sku skuQuery) {
+        return skuDao.getSkuListCount(skuQuery);
+    }
+
+    @Override
+    public List<Sku> getSkuListWithPage(Sku skuQuery) {
+        return skuDao.getSkuListWithPage(skuQuery);
+    }
+
+    @Override
+    public Integer updateSkuByKey(Sku sku) {
+        if(null != sku){
+            skuDao.updateSkuByKey(sku);
+        }
+        return null;
     }
 }

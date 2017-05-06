@@ -32,7 +32,13 @@
     <sql id="conditions">
         <where>
             <if test="skuName != null and skuName != ''">
-                    sku_name=#{skuName}
+                sku_name=#{skuName}
+            </if>
+            <if test="productId != null and productId != ''">
+                product_id=#{productId}
+            </if>
+            <if test="colorId != null and colorId !=''">
+                color_id=#{colorId}
             </if>
         </where>
     </sql>
@@ -41,10 +47,15 @@
             limit ${startRow},${pageSize}
         </if>
     </sql>
-    <select id="getEntityList" parameterType="com.orange.bean.product.Sku" resultMap="BaseResultMap">
+    <select id="getSkuListWithPage" parameterType="com.orange.bean.product.Sku" resultMap="BaseResultMap">
         <include refid="selectFields"/>
         <include refid="conditions"/>
         <include refid="limited"/>
+    </select>
+
+    <select id="getSkuListCount" parameterType="com.orange.bean.product.Sku" resultType="int">
+        select count(1) from t_sku
+        <include refid="conditions"/>
     </select>
     <insert id="addSku" parameterType="com.orange.bean.product.Sku">
         INSERT INTO t_sku
@@ -174,4 +185,26 @@
             </if>
         </trim>
     </insert>
+
+    <update id="updateSkuByKey" parameterType="com.orange.bean.product.Sku">
+        UPDATE t_sku
+        <set>
+            <trim suffixOverrides=",">
+                <if test="skuPrice != null and skuPrice !=''">
+                    sku_price=#{skuPrice},
+                </if>
+                <if test="marketPrice != null and marketPrice !='' ">
+                    market_price=#{marketPrice},
+                </if>
+                <if test="stockInventory != null and stockInventory != ''">
+                    stock_inventory=#{stockInventory}
+                </if>
+            </trim>
+        </set>
+        <where>
+            <if test="id != null and id !=''">
+                id=#{id}
+            </if>
+        </where>
+    </update>
 </mapper>

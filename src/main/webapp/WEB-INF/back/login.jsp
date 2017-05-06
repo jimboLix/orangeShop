@@ -3,10 +3,10 @@
 <html>
 <head>
     <title>Title</title>
-    <c:import url="common.jsp"/>
+    <%@include file="common.jsp"%>
 </head>
 <body>
-    <form method="post" action="${base}/login/doLogin.do">
+    <form method="post" action="login/doLogin.do">
         <table>
             <tr><td>账号：</td><td><input type="text" name="username"></td></tr>
             <tr><td>密码：</td><td><input type="password" name="password"></td></tr>

@@ -17,4 +17,10 @@ public interface ColorService {
      * @param colorQuery
      */
     public List<Color> getColorList(Color colorQuery);
+
+    /**
+     * 根据主键查找
+     * @param id
+     */
+    public Color getColorByKey(Integer id);
 }

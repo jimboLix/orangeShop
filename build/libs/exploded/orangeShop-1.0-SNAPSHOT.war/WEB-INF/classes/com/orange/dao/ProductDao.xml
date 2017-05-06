@@ -24,28 +24,38 @@
         <result column="size" property="size" jdbcType="VARCHAR"/>
         <result property="description" column="description" />
         <result property="packageList" column="package_list" />
+        <result property="classId" column="class_id"/>
     </resultMap>
 
     <sql id="selectFields">
         SELECT
             id,no,name,weight,is_new,is_hot,is_commend,create_time,create_user_id,check_time,check_user_id,
-            is_show,is_del,type_id,brand_id,keywords,sales,feature,color,size
+            is_show,is_del,type_id,brand_id,keywords,sales,feature,color,size,class_id
         from t_product
     </sql>
 
     <sql id="condition">
         <where>
+            <if test="id != null and id !=''">
+                id=#{id}
+            </if>
             <if test="isHot != null">
-                is_hot=#{isHot}
+                AND is_hot=#{isHot}
+            </if>
+            <if test="no != null and no !=''">
+                AND no=#{no}
             </if>
             <if test="name != null and name != ''">
                     AND name like '%${name}%'
             </if>
             <if test="brandId != null">
-                and brand_id=${brandId}
+                and brand_id=#{brandId}
             </if>
             <if test="isShow != null">
-                and is_show=${isShow}
+                and is_show=#{isShow}
+            </if>
+            <if test="classId != null">
+                and class_id=#{classId}
             </if>
         </where>
     </sql>
@@ -134,7 +144,10 @@
                 color,
             </if>
             <if test="size != null">
-                size
+                size,
+            </if>
+            <if test="classId != null">
+                class_id
             </if>
         </trim>
         VALUES
@@ -203,8 +216,36 @@
                 #{color},
             </if>
             <if test="size != null">
-                #{size}
+                #{size},
+            </if>
+            <if test="classId != null">
+                #{classId}
             </if>
         </trim>
     </insert>
+
+    <update id="update" parameterType="com.orange.bean.product.Product">
+        update t_product
+        <set>
+            <trim suffixOverrides=",">
+                <if test="name != null and name !=''">
+                    name = #{name},
+                </if>
+                <if test="isHot !=null and isHot !=''">
+                    is_hot=#{isHot},
+                </if>
+                <if test="isNew != null and isNew !=''">
+                    is_new=#{isNew},
+                </if>
+                <if test="weight != null and weight !=''">
+                    weight=#{weight}
+                </if>
+            </trim>
+        </set>
+        <where>
+            <if test="id !=null and id !=''">
+                id=#{id}
+            </if>
+        </where>
+    </update>
 </mapper>
