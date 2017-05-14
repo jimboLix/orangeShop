@@ -22,6 +22,7 @@ public class Sku extends PageBean implements Serializable {
 	private Double deliveFee;
 	private Double skuPrice = 0.0;
 	private Integer stockInventory=0;
+	//购买限制
 	private Integer skuUpperLimit=0;
 	private String location;
 	private String skuImg;

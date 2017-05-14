@@ -31,13 +31,13 @@
     </sql>
     <sql id="conditions">
         <where>
-            <if test="skuName != null and skuName != ''">
+            <if test="skuName != null and skuName != ' '">
                 sku_name=#{skuName}
             </if>
-            <if test="productId != null and productId != ''">
+            <if test="productId != null and productId != ' '">
                 product_id=#{productId}
             </if>
-            <if test="colorId != null and colorId !=''">
+            <if test="colorId != null and colorId !=' '">
                 color_id=#{colorId}
             </if>
         </where>
@@ -197,7 +197,10 @@
                     market_price=#{marketPrice},
                 </if>
                 <if test="stockInventory != null and stockInventory != ''">
-                    stock_inventory=#{stockInventory}
+                    stock_inventory=#{stockInventory},
+                </if>
+                <if test="skuUpperLimit != null and skuUpperLimit !=''">
+                    sku_upper_limit=#{skuUpperLimit}
                 </if>
             </trim>
         </set>
@@ -207,4 +210,13 @@
             </if>
         </where>
     </update>
+    
+    <select id="getStock" parameterType="integer" resultMap="BaseResultMap">
+        select * from t_sku
+        where product_id=#{productId} and stock_inventory > 0
+    </select>
+
+    <select id="getSkuByKey" parameterType="integer" resultMap="BaseResultMap">
+        select * from t_sku where id=#{id}
+    </select>
 </mapper>

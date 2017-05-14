@@ -11,12 +11,12 @@ import com.orange.service.SkuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author fengyan.li
@@ -61,9 +61,9 @@ public class ProductServiceImpl implements ProductService {
         //最小销售单元：例如L型黑色就是一个最小销售单元。
         Sku sku = new Sku();
         sku.setCreateTime(new Date());
-        for(String size : product.getSize().split(",")){
+        for (String size : product.getSize().split(",")) {
             sku.setSize(size);
-            for (String color : product.getColor().split(",")){
+            for (String color : product.getColor().split(",")) {
                 sku.setColorId(Integer.valueOf(color));
                 sku.setProductId(productId);
                 skuService.addSku(sku);
@@ -74,8 +74,33 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void update(Product product) {
-        if(product != null){
+        if (product != null) {
             productDao.update(product);
         }
+    }
+
+    @Override
+    public void isShow(String idStr, Integer isShow) {
+        if (isShow != null) {
+            List<Integer> ids = new ArrayList<>();
+            String[] idsArry = idStr.split(",");
+
+            Product product = new Product();
+            for (String id : idsArry) {
+                if (!StringUtils.isEmpty(id)) {
+                    product.setId(Integer.valueOf(id));
+                    product.setIsShow(isShow);
+                    productDao.isShow(product);
+                }
+            }
+        }
+    }
+
+    @Override
+    public Product getProductByKey(Integer id) {
+        if (id != null) {
+            return productDao.getProductByKey(id);
+        }
+        return null;
     }
 }

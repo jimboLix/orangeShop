@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @author fengyan.li
  * @version V1.0
@@ -22,5 +24,21 @@ public class ImgServiceImpl implements ImgService {
     @Transactional
     public Integer addImg(Img img) {
         return imgDao.addImg(img);
+    }
+
+    @Override
+    public List<Img> getImgListWithPage(Img imgQuery) {
+        if(null != imgQuery){
+            return imgDao.getImgListWithPage(imgQuery);
+        }
+        return null;
+    }
+
+    @Override
+    public List<Img> getImgByProductId(Integer productId) {
+        if(productId != null){
+            return imgDao.getImgByProductId(productId);
+        }
+        return null;
     }
 }

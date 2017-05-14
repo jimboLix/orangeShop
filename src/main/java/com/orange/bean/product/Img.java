@@ -1,5 +1,7 @@
 package com.orange.bean.product;
 
+import com.orange.util.Constants;
+
 import java.io.Serializable;
 
 
@@ -21,7 +23,7 @@ public class Img implements Serializable {
 	
 	//获取全Url
 	public String getAllUrl(){
-		return  url;
+		return Constants.IMAGE_URL+url;
 	}
 
 	public Integer getId() {

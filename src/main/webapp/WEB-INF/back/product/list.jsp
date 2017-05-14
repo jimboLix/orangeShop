@@ -14,7 +14,8 @@
         <div class="wu-toolbar-button">
             <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openSku()" plain="true">库存管理</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEdit()" plain="true">修改</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="remove()" plain="true">下架</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="upShow()" plain="true">上架</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="downShow()" plain="true">下架</a>
         </div>
         <div class="wu-toolbar-search">
             <form id="jvForm">
@@ -39,6 +40,7 @@
         var formdata = $("#jvForm").serializeJson();
         $('#datagrid').datagrid('load',formdata);
     }
+
     function getSelected() {
        var checkItems = $("#datagrid").datagrid("getChecked");
        var ids = [];
@@ -46,6 +48,35 @@
            ids.push(item.id);
        });
        return ids;
+    }
+
+    function upShow(){
+        var checkItems = $("#datagrid").datagrid("getChecked");
+        var ids=",";
+        $.each(checkItems,function(index,item){
+            ids+=item.id+",";
+        });
+
+        $.post(
+            "${base}/product/isShow.do",{"ids":ids,"isShow":1},function(data){
+                searchProduct();
+            }
+        );
+    }
+
+    function downShow(){
+
+        var checkItems = $("#datagrid").datagrid("getChecked");
+        var ids=",";
+        $.each(checkItems,function(index,item){
+            ids+=item.id+",";
+        });
+
+        $.post(
+            "${base}/product/isShow.do",{"isShow":0,"ids":ids},function(data){
+                searchProduct();
+            },"json"
+        );
     }
 
     /**

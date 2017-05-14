@@ -72,7 +72,7 @@
             $.post(
                 "${base}/sku/update.do",
                 {"id":row.id,"skuPrice":row.skuPrice,"marketPrice":row.marketPrice,
-                    "stockInventory":row.stockInventory
+                    "stockInventory":row.stockInventory,"skuUpperLimit":row.skuUpperLimit
                 },
                 function (data) {
 
@@ -107,6 +107,8 @@
                 type:'text'
             }},{field:'colorName',title:'颜色',width:100,formatter : function(value, row, index) {
                     return row.color.name;
+            }},{ field:'skuUpperLimit',title:'购买限制',width:200,sortable:true,editor:{
+                type:'text'
             }},
             {
                 field : 'opt1',

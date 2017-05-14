@@ -46,6 +46,21 @@
         <servlet-name>back</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
+
+    <!--配置前台的-->
+    <servlet>
+        <servlet-name>front</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc-front.xml</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>front</servlet-name>
+        <url-pattern>*.shtml</url-pattern>
+    </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>

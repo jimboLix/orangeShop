@@ -22,8 +22,8 @@
         <result column="feature" property="feature" jdbcType="VARCHAR"/>
         <result column="color" property="color" jdbcType="VARCHAR"/>
         <result column="size" property="size" jdbcType="VARCHAR"/>
-        <result property="description" column="description" />
-        <result property="packageList" column="package_list" />
+        <result property="description" column="description"/>
+        <result property="packageList" column="package_list"/>
         <result property="classId" column="class_id"/>
     </resultMap>
 
@@ -46,7 +46,7 @@
                 AND no=#{no}
             </if>
             <if test="name != null and name != ''">
-                    AND name like '%${name}%'
+                AND name like '%${name}%'
             </if>
             <if test="brandId != null">
                 and brand_id=#{brandId}
@@ -248,4 +248,22 @@
             </if>
         </where>
     </update>
+
+    <update id="isShow" parameterType="com.orange.bean.product.Product">
+        UPDATE t_product
+        <if test="isShow != null and isShow !=' '">
+            SET is_show=#{isShow}
+        </if>
+        <where>
+            <if test="id != null and id !=' '">
+                id =#{id}
+            </if>
+        </where>
+    </update>
+
+    <!--根据主键查询-->
+    <select id="getProductByKey" parameterType="Integer" resultMap="BaseResultMap">
+        select * from t_product
+             where   id=#{id}
+    </select>
 </mapper>

@@ -20,6 +20,7 @@ import java.util.List;
 public class SkuServiceImpl implements SkuService {
     @Resource
     private SkuDao skuDao;
+
     @Override
     @Transactional
     public Integer addSku(Sku sku) {
@@ -38,8 +39,24 @@ public class SkuServiceImpl implements SkuService {
 
     @Override
     public Integer updateSkuByKey(Sku sku) {
-        if(null != sku){
+        if (null != sku) {
             skuDao.updateSkuByKey(sku);
+        }
+        return null;
+    }
+
+    @Override
+    public List<Sku> getStock(Integer productId) {
+        if (null != productId) {
+            return skuDao.getStock(productId);
+        }
+        return null;
+    }
+
+    @Override
+    public Sku getSkuByKey(Integer id) {
+        if (null != id) {
+            return skuDao.getSkuByKey(id);
         }
         return null;
     }

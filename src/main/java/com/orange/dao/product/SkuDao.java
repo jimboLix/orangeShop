@@ -19,23 +19,6 @@ public interface SkuDao {
 	 */
 	public Sku getSkuByKey(Integer id);
 
-	/**
-	 * 根据主键批量查找
-	 * @param id
-	 */
-	public List<Sku> getSkusByKeys(List<Integer> idList);
-
-	/**
-	 * 根据主键删除
-	 * @param id
-	 */
-	public Integer deleteByKey(Integer id);
-
-	/**
-	 * 根据主键批量删除
-	 * @param id
-	 */
-	public Integer deleteByKeys(List<Integer> idList);
 
 	/**
 	 * 根据主键更新
@@ -56,6 +39,7 @@ public interface SkuDao {
 	/**
 	 * 库存大于>0
 	 */
-	public List<Sku> getStock(Integer productId);
+	 List<Sku> getStock(Integer productId);
+
 
 }

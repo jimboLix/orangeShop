@@ -38,4 +38,19 @@ public interface ProductService {
      * @param product
      */
     void update(Product product);
+
+    /**
+     * 商品上下架
+     * @param ids
+     * @param isShow
+     */
+    void isShow(String ids,Integer isShow);
+
+    /**
+     * 根据主键查找
+     *
+     * @param id
+     */
+    Product getProductByKey(Integer id);
+
 }
