@@ -12,17 +12,6 @@ public interface AddrDao {
 	 */
 	public Integer addAddr(Addr addr);
 
-	/**
-	 * 根据主键查找
-	 * @param
-	 */
-	public Addr getAddrByKey(Integer id);
-
-	/**
-	 * 根据主键批量查找
-	 * @param
-	 */
-	public List<Addr> getAddrsByKeys(List<Integer> idList);
 
 	/**
 	 * 根据主键删除

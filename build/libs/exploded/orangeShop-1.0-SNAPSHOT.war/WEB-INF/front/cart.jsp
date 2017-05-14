@@ -13,11 +13,11 @@
     <script type="text/javascript">
         //结算
         function trueBuy(){
-            window.location.href = "/buyer/trueBuy.shtml";
+            window.location.href = "${base}/buyer/trueBuy.shtml";
         }
         //消空购物车
         function clearCart(){
-            window.location.href = "/shopping/clearCart.shtml";
+            window.location.href = "${base}/shopping/clearCart.shtml";
         }
         //+
         function addProductAmount(skuId,buyLimit){
@@ -29,7 +29,7 @@
             }
             //跟后台进行交互
             //$("#num" + skuId).val(++num);
-            window.location.href = "/shopping/buyCart.shtml?skuId=" + skuId + "&amount=1" ;
+            window.location.href = "${base}/shopping/cart.shtml?skuId=" + skuId + "&amount=1" ;
         }
 
         //-
@@ -43,12 +43,12 @@
 
             //跟后台进行交互
             //$("#num" + skuId).val(++num);
-            window.location.href = "/shopping/buyCart.shtml?skuId=" + skuId + "&amount=-1" ;
+            window.location.href = "${base}/shopping/cart.shtml?skuId=" + skuId + "&amount=-1" ;
         }
         //删除
         function delProduct(skuId){
             if(confirm("你确定要删除吗?")){
-                window.location.href = "/shopping/deleteItem.shtml?skuId=" + skuId;
+                window.location.href = "${base}/shopping/deleteItem.shtml?skuId=" + skuId;
             }
         }
     </script>
@@ -130,7 +130,7 @@
             </table>
             <div class="page">
 				<span class="l">
-					<input type="button" onclick="window.open('/product/detail.shtml?id=274')" class="hand btn100x26c"
+					<input type="button" onclick="window.open('${base}/product/detail.shtml?id=${productId}')" class="hand btn100x26c"
                            title="继续购物" value="继续购物">
 					<input type="button" onclick="clearCart()" class="hand btn100x26c" title="清空购物车" value="清空购物车">
 				</span>

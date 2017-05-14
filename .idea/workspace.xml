@@ -2,101 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdb9c347-84b0-4fb5-8ecd-49d01b105e82" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/020.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/btn138x40.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/btn60x20.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/btn66x23.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/icon_car.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/line_bar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/p50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/ppp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/set.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/step.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/orange/bean/BuyCart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/orange/bean/BuyItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/orange/controller/CarController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/orange/util/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/orange/util/PathUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/cart.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/productDetail.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/com.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/bean/product/Img.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/bean/product/Img.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/bean/product/Sku.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/bean/product/Sku.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/controller/ProductController.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/controller/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/controller/UploadController.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/controller/UploadController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/dao/product/ImgDao.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/dao/product/ImgDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/dao/product/ProductDao.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/dao/product/ProductDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/dao/product/SkuDao.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/dao/product/SkuDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/service/ImgService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/service/ImgService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/service/ProductService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/service/ProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/service/SkuService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/service/SkuService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/service/impl/ImgServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/service/impl/ImgServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/service/impl/ProductServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/service/impl/ProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/service/impl/SkuServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/service/impl/SkuServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/bean/product/Img.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/bean/product/Img.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/bean/product/Sku.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/bean/product/Sku.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/controller/ProductController.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/controller/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/controller/UploadController.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/controller/UploadController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/product/ImgDao.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/product/ImgDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/product/ProductDao.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/product/ProductDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/product/SkuDao.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/product/SkuDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/ImgService.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/ImgService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/ProductService.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/ProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/SkuService.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/SkuService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/impl/ImgServiceImpl.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/impl/ImgServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/impl/ProductServiceImpl.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/impl/ProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/impl/SkuServiceImpl.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/service/impl/SkuServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/btn136x36.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/orange/controller/FrontOrderController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/orange/dao/OrderDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/orange/service/AddrService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/orange/service/OrderService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/orange/service/impl/AddrServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/orange/service/impl/OrderServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/orange/dao/AddrDao.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/orange/dao/OrderDao.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/productOrder.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/bean/BuyItem.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/bean/BuyItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/controller/CarController.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/controller/CarController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/orange/dao/AddrDao.class" afterPath="$PROJECT_DIR$/build/classes/main/com/orange/dao/AddrDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/bean/BuyItem.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/bean/BuyItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/controller/CarController.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/controller/CarController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/AddrDao.class" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/AddrDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/orangeShop-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/build/libs/orangeShop-1.0-SNAPSHOT.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___jimboLix___orangeShop_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___jimboLix___orangeShop_1_0_SNAPSHOT_war__exploded_.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/orangeShop_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/orangeShop_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_17.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_9.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/back/login.jsp" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/back/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/back/product/list.jsp" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/back/product/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/back/sku/list.jsp" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/back/sku/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/ImgDao.xml" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/ImgDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/ProductDao.xml" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/ProductDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/SkuDao.xml" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/com/orange/dao/SkuDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/properties/jdbc.properties" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/properties/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/springmvc-back.xml" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/springmvc-back.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/springmvc-front.xml" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/classes/springmvc-front.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/com/orange/dao/ImgDao.xml" afterPath="$PROJECT_DIR$/build/resources/main/com/orange/dao/ImgDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/com/orange/dao/ProductDao.xml" afterPath="$PROJECT_DIR$/build/resources/main/com/orange/dao/ProductDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/com/orange/dao/SkuDao.xml" afterPath="$PROJECT_DIR$/build/resources/main/com/orange/dao/SkuDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/properties/jdbc.properties" afterPath="$PROJECT_DIR$/build/resources/main/properties/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/springmvc-back.xml" afterPath="$PROJECT_DIR$/build/resources/main/springmvc-back.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/springmvc-front.xml" afterPath="$PROJECT_DIR$/build/resources/main/springmvc-front.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/bean/product/Img.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/bean/product/Img.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/bean/product/Sku.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/bean/product/Sku.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/controller/ProductController.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/controller/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/controller/UploadController.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/controller/UploadController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/dao/product/ImgDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/dao/product/ImgDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/dao/product/ProductDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/dao/product/ProductDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/dao/product/SkuDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/dao/product/SkuDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/service/ImgService.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/service/ImgService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/service/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/service/ProductService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/service/SkuService.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/service/SkuService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/service/impl/ImgServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/service/impl/ImgServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/service/impl/ProductServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/service/impl/ProductServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/service/impl/SkuServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/service/impl/SkuServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/orange/dao/ImgDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/orange/dao/ImgDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/orange/dao/ProductDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/orange/dao/ProductDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/orange/dao/SkuDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/orange/dao/SkuDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/properties/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/properties/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/springmvc-back.xml" afterPath="$PROJECT_DIR$/src/main/resources/springmvc-back.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/springmvc-front.xml" afterPath="$PROJECT_DIR$/src/main/resources/springmvc-front.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/back/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/back/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/back/product/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/back/product/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/back/sku/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/back/sku/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/front/cart.jsp" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/WEB-INF/front/cart.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/css/style.css" afterPath="$PROJECT_DIR$/build/libs/exploded/orangeShop-1.0-SNAPSHOT.war/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/bean/BuyItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/bean/BuyItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/controller/CarController.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/controller/CarController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/orange/dao/AddrDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/orange/dao/AddrDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/cart.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/cart.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -179,28 +112,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SkuDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/orange/dao/SkuDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="219" column="42" lean-forward="true" selection-start-line="219" selection-start-column="42" selection-end-line="219" selection-end-column="42" />
-              <folding>
-                <marker date="1494638616086" expanded="true" signature="1861:2120" ph="SELECT id,pr... " />
-                <marker date="1494638616086" expanded="true" signature="3013:3039" ph="select count... t_sku" />
-                <marker date="1494638616086" expanded="true" signature="7867:7924" ph="select * fro... t_sku" />
-                <marker date="1494638616086" expanded="true" signature="7867:7928" ph="select * fro... t_sku" />
-                <marker date="1494638616086" expanded="true" signature="7867:7948" ph="select * fro... t_sku" />
-                <marker date="1494638616086" expanded="true" signature="8052:8086" ph="select * fro... t_sku" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CarController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/controller/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="65" column="31" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="31" />
+            <state relative-caret-position="152">
+              <caret line="340" column="55" lean-forward="false" selection-start-line="340" selection-start-column="52" selection-end-line="340" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productOrder.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/productOrder.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="49" column="42" lean-forward="true" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrontOrderController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/controller/FrontOrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/service/OrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/service/impl/OrderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,13 +164,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuyCart.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/bean/BuyCart.java">
+      <file leaf-file-name="OrderDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/dao/OrderDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="216">
+              <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="16" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/orange/dao/OrderDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="195" column="27" lean-forward="true" selection-start-line="195" selection-start-column="27" selection-end-line="195" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1494751157306" expanded="true" signature="1076:1227" ph="SELECT ${fie... bbs_order" />
+                <marker date="1494751157306" expanded="true" signature="2746:2913" ph="SELECT id,oi... bbs_order" />
+                <marker date="1494751157306" expanded="true" signature="3344:3384" ph="DELETE FROM " />
+                <marker date="1494751157306" expanded="true" signature="3664:4751" ph="UPDATE bbs_o... " />
+                <marker date="1494751157306" expanded="true" signature="5109:5139" ph="SELECT count... bbs_order" />
               </folding>
             </state>
           </provider>
@@ -223,62 +193,10 @@
       <file leaf-file-name="BuyItem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/bean/BuyItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="27" />
+            <state relative-caret-position="296">
+              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cart.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/cart.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1339">
-              <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/bean/product/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sku.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/bean/product/Sku.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Color.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/bean/product/Color.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="924" column="87" lean-forward="false" selection-start-line="924" selection-start-column="87" selection-end-line="924" selection-end-column="87" />
-              <folding>
-                <marker date="1494639617155" expanded="true" signature="84:182" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -287,8 +205,18 @@
       <file leaf-file-name="productDetail.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/productDetail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
+            <state relative-caret-position="362">
               <caret line="174" column="46" lean-forward="false" selection-start-line="174" selection-start-column="46" selection-end-line="174" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/cart.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="111" column="66" lean-forward="false" selection-start-line="111" selection-start-column="51" selection-end-line="111" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -300,8 +228,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -325,6 +253,9 @@
       <find>st3_1</find>
       <find>step</find>
       <find>productId</find>
+      <find>结算</find>
+      <find>btn136x36a</find>
+      <find>AddrQ</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -513,7 +444,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2988262780445" />
+        <entry key="$PROJECT_DIR$" value="2989496570144" />
         <entry key="$PROJECT_DIR$/build.gradle" value="778369377" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="546542480" />
       </map>
@@ -689,16 +620,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/config/mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/orange/service/ClassiFyServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/orange/dao/ClassiFyDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/orange/dao/product/ClassiFyDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/orange/service/ClassiFyService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/orange/service/impl/ClassiFyServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/orange/bean/product/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/orange/bean/PageBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/orange/controller/ClassiFyController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/back/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/orange/dao/product/ColorDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/orange/dao/colorDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/orange/service/ColorService.java" />
@@ -727,7 +648,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/orange/service/ImgService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/orange/service/impl/ImgServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/orange/controller/ProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/orange/bean/BuyItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/orange/bean/BuyCart.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/orange/util/Constans.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/orange/service/SkuService.java" />
@@ -735,11 +655,22 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/orange/dao/SkuDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/orange/service/impl/SkuServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/productDetail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/orange/util/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/orange/bean/product/Img.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/orange/controller/CarController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/orange/dao/AddrDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/orange/service/AddrService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/orange/service/impl/AddrServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/orange/dao/AddrDao.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/cart.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/orange/controller/CarController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/orange/bean/BuyItem.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/productOrder.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/orange/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/orange/dao/OrderDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/orange/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/orange/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/orange/controller/FrontOrderController.java" />
       </list>
     </option>
   </component>
@@ -830,7 +761,6 @@
     <panes>
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -952,92 +882,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1091,7 +935,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1121,110 +965,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
+              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1239,23 +990,23 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.orange.dao" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\github\orangeShop\src\main\resources\com\orange\dao" />
+      <recent name="F:\github\orangeShop\src\main\webapp\WEB-INF\front" />
+      <recent name="F:\github\orangeShop\src\main\webapp\images" />
+      <recent name="F:\github\orangeShop\src\main\webapp\css" />
+      <recent name="F:\github\orangeShop\src\main\webapp\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\github\orangeShop\src\main\webapp\WEB-INF\back\product" />
       <recent name="F:\github\orangeShop\src\main\webapp\WEB-INF\back" />
       <recent name="F:\github\orangeShop\src\main\resources\com\orange\dao\product" />
       <recent name="F:\github\orangeShop\src\main\webapp" />
       <recent name="F:\github\orangeShop\src\main\resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.orange.dao" />
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\github\orangeShop\src\main\webapp\images" />
-      <recent name="F:\github\orangeShop\src\main\webapp\WEB-INF\front" />
-      <recent name="F:\github\orangeShop\src\main\webapp\css" />
-      <recent name="F:\github\orangeShop\src\main\webapp\js" />
-      <recent name="F:\github\orangeShop\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2062,6 +1813,7 @@
       <workItem from="1494232082335" duration="4597000" />
       <workItem from="1494289439262" duration="486000" />
       <workItem from="1494635783739" duration="7021000" />
+      <workItem from="1494748481155" duration="2708000" />
     </task>
     <servers />
   </component>
@@ -2098,7 +1850,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121162000" />
+    <option name="totallyTimeSpent" value="123870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -2115,18 +1867,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21766561" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5599369" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38801262" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63235295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63235295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21156661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35944363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35609397" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2172,7 +1924,7 @@
           <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="87" />
+      <option name="time" value="88" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -2188,83 +1940,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/back/class/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="106" column="4" lean-forward="false" selection-start-line="106" selection-start-column="4" selection-end-line="142" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/back/common.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/bean/vo/ProductVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/back/product/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="62" column="6" lean-forward="false" selection-start-line="62" selection-start-column="6" selection-end-line="76" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/back/product/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="71" lean-forward="false" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/orange/dao/EmployeeDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/bean/user/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/back/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/controller/SkuController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -2363,15 +2038,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <marker date="1420707040000" expanded="true" signature="11167:11231" ph="..." />
-            <marker date="1420707040000" expanded="true" signature="12782:12882" ph="..." />
-            <marker date="1420707040000" expanded="true" signature="14037:14150" ph="..." />
-            <marker date="1420707040000" expanded="true" signature="14852:14917" ph="..." />
-            <marker date="1420707040000" expanded="true" signature="15116:15212" ph="..." />
-            <marker date="1420707040000" expanded="true" signature="15464:15538" ph="..." />
-            <marker date="1420707040000" expanded="true" signature="16427:16466" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2445,7 +2112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="195" column="49" lean-forward="true" selection-start-line="195" selection-start-column="49" selection-end-line="195" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2453,7 +2119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2461,7 +2126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
           <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2469,39 +2133,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="924" column="87" lean-forward="false" selection-start-line="924" selection-start-column="87" selection-end-line="924" selection-end-column="87" />
-          <folding>
-            <marker date="1494639617155" expanded="true" signature="84:182" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/productDetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="174" column="46" lean-forward="false" selection-start-line="174" selection-start-column="46" selection-end-line="174" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/orange/dao/SkuDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="219" column="42" lean-forward="true" selection-start-line="219" selection-start-column="42" selection-end-line="219" selection-end-column="42" />
+        <state relative-caret-position="3942">
+          <caret line="219" column="42" lean-forward="false" selection-start-line="219" selection-start-column="42" selection-end-line="219" selection-end-column="42" />
           <folding>
-            <marker date="1494638616086" expanded="true" signature="1861:2120" ph="SELECT id,pr... " />
-            <marker date="1494638616086" expanded="true" signature="3013:3039" ph="select count... t_sku" />
-            <marker date="1494638616086" expanded="true" signature="7867:7924" ph="select * fro... t_sku" />
-            <marker date="1494638616086" expanded="true" signature="7867:7928" ph="select * fro... t_sku" />
-            <marker date="1494638616086" expanded="true" signature="7867:7948" ph="select * fro... t_sku" />
-            <marker date="1494638616086" expanded="true" signature="8052:8086" ph="select * fro... t_sku" />
+            <marker date="1494748292911" expanded="true" signature="1861:2120" ph="SELECT id,pr... " />
+            <marker date="1494748292911" expanded="true" signature="3013:3039" ph="select count... t_sku" />
+            <marker date="1494748292911" expanded="true" signature="7867:7924" ph="select * fro... t_sku" />
+            <marker date="1494748292911" expanded="true" signature="7867:7928" ph="select * fro... t_sku" />
+            <marker date="1494748292911" expanded="true" signature="7867:7948" ph="select * fro... t_sku" />
+            <marker date="1494748292911" expanded="true" signature="8052:8086" ph="select * fro... t_sku" />
           </folding>
         </state>
       </provider>
@@ -2519,9 +2164,9 @@
         <state relative-caret-position="317">
           <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#413#414#0" expanded="false" />
+            <element signature="e#450#451#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2530,7 +2175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="35" column="74" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2538,7 +2182,105 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#928#929#0" expanded="false" />
+            <element signature="e#949#950#0" expanded="false" />
+            <element signature="e#993#994#0" expanded="false" />
+            <element signature="e#1022#1023#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
+            <element signature="e#1096#1097#0" expanded="false" />
+            <element signature="e#1127#1128#0" expanded="false" />
+            <element signature="e#1148#1149#0" expanded="false" />
+            <element signature="e#1174#1175#0" expanded="false" />
+            <element signature="e#1190#1191#0" expanded="false" />
+            <element signature="e#1223#1224#0" expanded="false" />
+            <element signature="e#1242#1243#0" expanded="false" />
+            <element signature="e#1267#1268#0" expanded="false" />
+            <element signature="e#1283#1284#0" expanded="false" />
+            <element signature="e#1315#1316#0" expanded="false" />
+            <element signature="e#1334#1335#0" expanded="false" />
+            <element signature="e#1361#1362#0" expanded="false" />
+            <element signature="e#1379#1380#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1438#1439#0" expanded="false" />
+            <element signature="e#1467#1468#0" expanded="false" />
+            <element signature="e#1487#1488#0" expanded="false" />
+            <element signature="e#1527#1528#0" expanded="false" />
+            <element signature="e#1554#1555#0" expanded="false" />
+            <element signature="e#1583#1584#0" expanded="false" />
+            <element signature="e#1602#1603#0" expanded="false" />
+            <element signature="e#1641#1642#0" expanded="false" />
+            <element signature="e#1666#1667#0" expanded="false" />
+            <element signature="e#1695#1696#0" expanded="false" />
+            <element signature="e#1714#1715#0" expanded="false" />
+            <element signature="e#1753#1754#0" expanded="false" />
+            <element signature="e#1778#1779#0" expanded="false" />
+            <element signature="e#1811#1812#0" expanded="false" />
+            <element signature="e#1834#1835#0" expanded="false" />
+            <element signature="e#1881#1882#0" expanded="false" />
+            <element signature="e#1914#1915#0" expanded="false" />
+            <element signature="e#1945#1946#0" expanded="false" />
+            <element signature="e#1969#1970#0" expanded="false" />
+            <element signature="e#2015#2016#0" expanded="false" />
+            <element signature="e#2050#2051#0" expanded="false" />
+            <element signature="e#2085#2086#0" expanded="false" />
+            <element signature="e#2111#2112#0" expanded="false" />
+            <element signature="e#2163#2164#0" expanded="false" />
+            <element signature="e#2202#2203#0" expanded="false" />
+            <element signature="e#2232#2233#0" expanded="false" />
+            <element signature="e#2255#2256#0" expanded="false" />
+            <element signature="e#2299#2300#0" expanded="false" />
+            <element signature="e#2332#2333#0" expanded="false" />
+            <element signature="e#2366#2367#0" expanded="false" />
+            <element signature="e#2391#2392#0" expanded="false" />
+            <element signature="e#2441#2442#0" expanded="false" />
+            <element signature="e#2478#2479#0" expanded="false" />
+            <element signature="e#2508#2509#0" expanded="false" />
+            <element signature="e#2528#2529#0" expanded="false" />
+            <element signature="e#2569#2570#0" expanded="false" />
+            <element signature="e#2596#2597#0" expanded="false" />
+            <element signature="e#2625#2626#0" expanded="false" />
+            <element signature="e#2644#2645#0" expanded="false" />
+            <element signature="e#2683#2684#0" expanded="false" />
+            <element signature="e#2708#2709#0" expanded="false" />
+            <element signature="e#2738#2739#0" expanded="false" />
+            <element signature="e#2758#2759#0" expanded="false" />
+            <element signature="e#2799#2800#0" expanded="false" />
+            <element signature="e#2826#2827#0" expanded="false" />
+            <element signature="e#2857#2858#0" expanded="false" />
+            <element signature="e#2878#2879#0" expanded="false" />
+            <element signature="e#2921#2922#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#2981#2982#0" expanded="false" />
+            <element signature="e#3003#3004#0" expanded="false" />
+            <element signature="e#3047#3048#0" expanded="false" />
+            <element signature="e#3078#3079#0" expanded="false" />
+            <element signature="e#3107#3108#0" expanded="false" />
+            <element signature="e#3126#3127#0" expanded="false" />
+            <element signature="e#3165#3166#0" expanded="false" />
+            <element signature="e#3190#3191#0" expanded="false" />
+            <element signature="e#3224#3225#0" expanded="false" />
+            <element signature="e#3249#3250#0" expanded="false" />
+            <element signature="e#3299#3300#0" expanded="false" />
+            <element signature="e#3336#3337#0" expanded="false" />
+            <element signature="e#3370#3371#0" expanded="false" />
+            <element signature="e#3395#3396#0" expanded="false" />
+            <element signature="e#3445#3446#0" expanded="false" />
+            <element signature="e#3482#3483#0" expanded="false" />
+            <element signature="e#3512#3513#0" expanded="false" />
+            <element signature="e#3533#3534#0" expanded="false" />
+            <element signature="e#3575#3576#0" expanded="false" />
+            <element signature="e#3604#3605#0" expanded="false" />
+            <element signature="e#3632#3633#0" expanded="false" />
+            <element signature="e#3651#3652#0" expanded="false" />
+            <element signature="e#3689#3690#0" expanded="false" />
+            <element signature="e#3714#3715#0" expanded="false" />
+            <element signature="e#3741#3742#0" expanded="false" />
+            <element signature="e#3759#3760#0" expanded="false" />
+            <element signature="e#3795#3796#0" expanded="false" />
+            <element signature="e#3818#3819#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2546,52 +2288,281 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/bean/BuyCart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#329#330#0" expanded="false" />
+            <element signature="e#362#363#0" expanded="false" />
+            <element signature="e#381#382#0" expanded="false" />
+            <element signature="e#408#409#0" expanded="false" />
+            <element signature="e#426#427#0" expanded="false" />
+            <element signature="e#462#463#0" expanded="false" />
+            <element signature="e#485#486#0" expanded="false" />
+            <element signature="e#517#518#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#584#585#0" expanded="false" />
+            <element signature="e#615#616#0" expanded="false" />
+            <element signature="e#644#645#0" expanded="false" />
+            <element signature="e#664#665#0" expanded="false" />
+            <element signature="e#704#705#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/bean/product/Sku.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
+        <state relative-caret-position="342">
           <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#931#932#0" expanded="false" />
+            <element signature="e#952#953#0" expanded="false" />
+            <element signature="e#995#996#0" expanded="false" />
+            <element signature="e#1024#1025#0" expanded="false" />
+            <element signature="e#1051#1052#0" expanded="false" />
+            <element signature="e#1070#1071#0" expanded="false" />
+            <element signature="e#1107#1108#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
+            <element signature="e#1158#1159#0" expanded="false" />
+            <element signature="e#1174#1175#0" expanded="false" />
+            <element signature="e#1207#1208#0" expanded="false" />
+            <element signature="e#1226#1227#0" expanded="false" />
+            <element signature="e#1259#1260#0" expanded="false" />
+            <element signature="e#1282#1283#0" expanded="false" />
+            <element signature="e#1329#1330#0" expanded="false" />
+            <element signature="e#1362#1363#0" expanded="false" />
+            <element signature="e#1393#1394#0" expanded="false" />
+            <element signature="e#1414#1415#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="false" />
+            <element signature="e#1486#1487#0" expanded="false" />
+            <element signature="e#1513#1514#0" expanded="false" />
+            <element signature="e#1531#1532#0" expanded="false" />
+            <element signature="e#1567#1568#0" expanded="false" />
+            <element signature="e#1590#1591#0" expanded="false" />
+            <element signature="e#1622#1623#0" expanded="false" />
+            <element signature="e#1645#1646#0" expanded="false" />
+            <element signature="e#1691#1692#0" expanded="false" />
+            <element signature="e#1724#1725#0" expanded="false" />
+            <element signature="e#1755#1756#0" expanded="false" />
+            <element signature="e#1777#1778#0" expanded="false" />
+            <element signature="e#1821#1822#0" expanded="false" />
+            <element signature="e#1852#1853#0" expanded="false" />
+            <element signature="e#1890#1891#0" expanded="false" />
+            <element signature="e#1918#1919#0" expanded="false" />
+            <element signature="e#1975#1976#0" expanded="false" />
+            <element signature="e#2018#2019#0" expanded="false" />
+            <element signature="e#2055#2056#0" expanded="false" />
+            <element signature="e#2082#2083#0" expanded="false" />
+            <element signature="e#2137#2138#0" expanded="false" />
+            <element signature="e#2178#2179#0" expanded="false" />
+            <element signature="e#2209#2210#0" expanded="false" />
+            <element signature="e#2231#2232#0" expanded="false" />
+            <element signature="e#2275#2276#0" expanded="false" />
+            <element signature="e#2306#2307#0" expanded="false" />
+            <element signature="e#2335#2336#0" expanded="false" />
+            <element signature="e#2355#2356#0" expanded="false" />
+            <element signature="e#2395#2396#0" expanded="false" />
+            <element signature="e#2422#2423#0" expanded="false" />
+            <element signature="e#2453#2454#0" expanded="false" />
+            <element signature="e#2474#2475#0" expanded="false" />
+            <element signature="e#2517#2518#0" expanded="false" />
+            <element signature="e#2546#2547#0" expanded="false" />
+            <element signature="e#2576#2577#0" expanded="false" />
+            <element signature="e#2597#2598#0" expanded="false" />
+            <element signature="e#2639#2640#0" expanded="false" />
+            <element signature="e#2668#2669#0" expanded="false" />
+            <element signature="e#2702#2703#0" expanded="false" />
+            <element signature="e#2727#2728#0" expanded="false" />
+            <element signature="e#2777#2778#0" expanded="false" />
+            <element signature="e#2814#2815#0" expanded="false" />
+            <element signature="e#2845#2846#0" expanded="false" />
+            <element signature="e#2869#2870#0" expanded="false" />
+            <element signature="e#2915#2916#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#2981#2982#0" expanded="false" />
+            <element signature="e#3005#3006#0" expanded="false" />
+            <element signature="e#3051#3052#0" expanded="false" />
+            <element signature="e#3086#3087#0" expanded="false" />
+            <element signature="e#3121#3122#0" expanded="false" />
+            <element signature="e#3147#3148#0" expanded="false" />
+            <element signature="e#3199#3200#0" expanded="false" />
+            <element signature="e#3238#3239#0" expanded="false" />
+            <element signature="e#3273#3274#0" expanded="false" />
+            <element signature="e#3299#3300#0" expanded="false" />
+            <element signature="e#3351#3352#0" expanded="false" />
+            <element signature="e#3390#3391#0" expanded="false" />
+            <element signature="e#3424#3425#0" expanded="false" />
+            <element signature="e#3448#3449#0" expanded="false" />
+            <element signature="e#3497#3498#0" expanded="false" />
+            <element signature="e#3532#3533#0" expanded="false" />
+            <element signature="e#3563#3564#0" expanded="false" />
+            <element signature="e#3584#3585#0" expanded="false" />
+            <element signature="e#3627#3628#0" expanded="false" />
+            <element signature="e#3656#3657#0" expanded="false" />
+            <element signature="e#3685#3686#0" expanded="false" />
+            <element signature="e#3704#3705#0" expanded="false" />
+            <element signature="e#3743#3744#0" expanded="false" />
+            <element signature="e#3768#3769#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/dao/AddrDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="43" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/service/AddrService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="351" column="36" lean-forward="false" selection-start-line="351" selection-start-column="36" selection-end-line="351" selection-end-column="36" />
+          <folding>
+            <marker date="1494749165552" expanded="true" signature="84:182" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/service/impl/AddrServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="286" column="0" lean-forward="false" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/orange/dao/AddrDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding>
+            <marker date="1494749548913" expanded="true" signature="622:685" ph="SELECT ${fie... bbs_addr" />
+            <marker date="1494749548913" expanded="true" signature="1628:1705" ph="SELECT id,bu... t_addr" />
+            <marker date="1494749548913" expanded="true" signature="2044:2081" ph="DELETE FROM " />
+            <marker date="1494749548913" expanded="true" signature="2377:2899" ph="UPDATE bbs_a... " />
+            <marker date="1494749548913" expanded="true" signature="3244:3271" ph="SELECT count... t_addr" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/bean/BuyCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/bean/BuyItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="27" />
+        <state relative-caret-position="296">
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/productDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="174" column="46" lean-forward="false" selection-start-line="174" selection-start-column="46" selection-end-line="174" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/cart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="111" column="66" lean-forward="false" selection-start-line="111" selection-start-column="51" selection-end-line="111" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/orange/dao/OrderDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="195" column="27" lean-forward="true" selection-start-line="195" selection-start-column="27" selection-end-line="195" selection-end-column="27" />
+          <folding>
+            <marker date="1494751157306" expanded="true" signature="1076:1227" ph="SELECT ${fie... bbs_order" />
+            <marker date="1494751157306" expanded="true" signature="2746:2913" ph="SELECT id,oi... bbs_order" />
+            <marker date="1494751157306" expanded="true" signature="3344:3384" ph="DELETE FROM " />
+            <marker date="1494751157306" expanded="true" signature="3664:4751" ph="UPDATE bbs_o... " />
+            <marker date="1494751157306" expanded="true" signature="5109:5139" ph="SELECT count... bbs_order" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/controller/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="65" column="31" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="31" />
+        <state relative-caret-position="152">
+          <caret line="340" column="55" lean-forward="false" selection-start-line="340" selection-start-column="52" selection-end-line="340" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/productOrder.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="49" column="42" lean-forward="true" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/cart.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/orange/controller/FrontOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1339">
-          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
