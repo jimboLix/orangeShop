@@ -1,5 +1,6 @@
 package com.orange.service;
 
+import com.orange.bean.BuyCart;
 import com.orange.bean.order.Order;
 
 /**
@@ -10,8 +11,9 @@ import com.orange.bean.order.Order;
  */
 public interface OrderService {
     /**
-     * 添加
-     * @param order
+     * 基本插入
+     *
+     * @return
      */
-    public Integer addOrder(Order order);
+    Order addOrder(Order order,BuyCart buyCart);
 }

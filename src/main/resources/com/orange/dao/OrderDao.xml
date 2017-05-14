@@ -171,19 +171,18 @@
 		id=#{id}
 	</update>
 	<!-- 分页 -->
-	<select id="getOrderListWithPage" parameterType="OrderQuery" resultMap="order">
+	<select id="getOrderListWithPage" parameterType="com.orange.bean.order.Order" resultMap="order">
 		<include refid="orderSelector" />
 		<include refid="orderListWhere" />
-		<include refid="orderListOrder" />
 		<include refid="orderListLimit" />
 	</select>
 	<!-- 数据总数 -->
-	<select id="getOrderListCount" parameterType="OrderQuery" resultType="int">
+	<select id="getOrderListCount" parameterType="com.orange.bean.order.Order" resultType="int">
 		SELECT count(1) FROM bbs_order
 		<include refid="orderListWhere" />
 	</select>
 	<!-- 数据集合 -->
-	<select id="getOrderList" parameterType="OrderQuery" resultMap="order">
+	<select id="getOrderList" parameterType="com.orange.bean.order.Order" resultMap="order">
 		<include refid="orderSelector" />
 		<include refid="orderListWhere" />
 		<include refid="orderListOrder" />
