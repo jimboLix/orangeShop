@@ -21,6 +21,10 @@ $(function(){
 		}
 	});
 });
+
+function myOrder() {
+    window.location.href='${base}/order/myOrder.shtml';
+}
 </script>
 </head>
 <body>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.orange.dao.ClassiFyDaoTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2017-05-02T12:28:57" hostname="DESKTOP-SRQCU2S" time="0.016">
+<testsuite name="com.orange.dao.ClassiFyDaoTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2017-05-19T09:23:27" hostname="lenovo-PC" time="0.015">
   <properties/>
-  <testcase name="getClassByPageTest" classname="com.orange.dao.ClassiFyDaoTest" time="0.016">
+  <testcase name="getClassByPageTest" classname="com.orange.dao.ClassiFyDaoTest" time="0.015">
     <failure message="org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.orange.dao.product.ClassiFyDao.save" type="org.apache.ibatis.binding.BindingException">org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.orange.dao.product.ClassiFyDao.save
 	at org.apache.ibatis.binding.MapperMethod$SqlCommand.&lt;init&gt;(MapperMethod.java:189)
 	at org.apache.ibatis.binding.MapperMethod.&lt;init&gt;(MapperMethod.java:43)
 	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:58)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:51)
-	at com.sun.proxy.$Proxy40.save(Unknown Source)
+	at com.sun.proxy.$Proxy38.save(Unknown Source)
 	at com.orange.dao.ClassiFyDaoTest.getClassByPageTest(ClassiFyDaoTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -63,53 +63,59 @@
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[2017-05-02 20:28:55,627][INFO ][org.springframework.test.context.support.DefaultTestContextBootstrapper:260] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-[2017-05-02 20:28:55,653][INFO ][org.springframework.test.context.support.DefaultTestContextBootstrapper:187] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@52d1ab99, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@475e504d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@262b30ca, org.springframework.test.context.support.DirtiesContextTestExecutionListener@f56c53a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@50843a2a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@656dc44f]
-[2017-05-02 20:28:55,789][INFO ][org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [applicationContext.xml]
-[2017-05-02 20:28:55,899][INFO ][org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\Workspaces\orangeShop\build\resources\main\config\mybatis.xml]
-[2017-05-02 20:28:55,944][INFO ][org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\Workspaces\orangeShop\build\resources\main\config\spring.xml]
-[2017-05-02 20:28:56,190][INFO ][org.springframework.context.support.GenericApplicationContext:582] - Refreshing org.springframework.context.support.GenericApplicationContext@2f0b987d: startup date [Tue May 02 20:28:56 CST 2017]; root of context hierarchy
-[2017-05-02 20:28:56,388][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:292] - Ignored because not a concrete top-level class: file [D:\Workspaces\orangeShop\build\classes\test\com\orange\dao\ClassiFyDaoTest.class]
-[2017-05-02 20:28:56,393][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:292] - Ignored because not a concrete top-level class: file [D:\Workspaces\orangeShop\build\classes\test\com\orange\dao\EmployeeDaoTest.class]
-[2017-05-02 20:28:56,400][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:292] - Ignored because not a concrete top-level class: file [D:\Workspaces\orangeShop\build\classes\test\com\orange\dao\ProductDaoTest.class]
-[2017-05-02 20:28:56,405][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:292] - Ignored because not a concrete top-level class: file [D:\Workspaces\orangeShop\build\classes\test\com\orange\dao\SpringTestCase.class]
-[2017-05-02 20:28:56,407][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:292] - Ignored because not a concrete top-level class: file [D:\Workspaces\orangeShop\build\classes\test\com\orange\dao\TypeDaoTest.class]
-[2017-05-02 20:28:56,408][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [D:\Workspaces\orangeShop\build\classes\main\com\orange\dao\AddrDao.class]
-[2017-05-02 20:28:56,413][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [D:\Workspaces\orangeShop\build\classes\main\com\orange\dao\BuyerDao.class]
-[2017-05-02 20:28:56,414][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [D:\Workspaces\orangeShop\build\classes\main\com\orange\dao\EmployeeDao.class]
-[2017-05-02 20:28:56,417][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [D:\Workspaces\orangeShop\build\classes\main\com\orange\dao\product\BrandDao.class]
-[2017-05-02 20:28:56,421][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [D:\Workspaces\orangeShop\build\classes\main\com\orange\dao\product\ClassiFyDao.class]
-[2017-05-02 20:28:56,426][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [D:\Workspaces\orangeShop\build\classes\main\com\orange\dao\product\ColorDao.class]
-[2017-05-02 20:28:56,439][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [D:\Workspaces\orangeShop\build\classes\main\com\orange\dao\product\FeatureDao.class]
-[2017-05-02 20:28:56,446][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [D:\Workspaces\orangeShop\build\classes\main\com\orange\dao\product\ImgDao.class]
-[2017-05-02 20:28:56,447][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [D:\Workspaces\orangeShop\build\classes\main\com\orange\dao\product\ProductDao.class]
-[2017-05-02 20:28:56,451][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [D:\Workspaces\orangeShop\build\classes\main\com\orange\dao\product\SkuDao.class]
-[2017-05-02 20:28:56,456][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [D:\Workspaces\orangeShop\build\classes\main\com\orange\dao\product\TypeDao.class]
-[2017-05-02 20:28:56,463][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'addrDao' and 'com.orange.dao.AddrDao' mapperInterface
-[2017-05-02 20:28:56,468][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'addrDao'.
-[2017-05-02 20:28:56,470][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'buyerDao' and 'com.orange.dao.BuyerDao' mapperInterface
-[2017-05-02 20:28:56,477][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'buyerDao'.
-[2017-05-02 20:28:56,478][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'employeeDao' and 'com.orange.dao.EmployeeDao' mapperInterface
-[2017-05-02 20:28:56,479][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'employeeDao'.
-[2017-05-02 20:28:56,479][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'brandDao' and 'com.orange.dao.product.BrandDao' mapperInterface
-[2017-05-02 20:28:56,486][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'brandDao'.
-[2017-05-02 20:28:56,487][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'classiFyDao' and 'com.orange.dao.product.ClassiFyDao' mapperInterface
-[2017-05-02 20:28:56,488][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'classiFyDao'.
-[2017-05-02 20:28:56,488][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'colorDao' and 'com.orange.dao.product.ColorDao' mapperInterface
-[2017-05-02 20:28:56,489][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'colorDao'.
-[2017-05-02 20:28:56,490][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'featureDao' and 'com.orange.dao.product.FeatureDao' mapperInterface
-[2017-05-02 20:28:56,491][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'featureDao'.
-[2017-05-02 20:28:56,491][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'imgDao' and 'com.orange.dao.product.ImgDao' mapperInterface
-[2017-05-02 20:28:56,492][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'imgDao'.
-[2017-05-02 20:28:56,493][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'productDao' and 'com.orange.dao.product.ProductDao' mapperInterface
-[2017-05-02 20:28:56,493][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'productDao'.
-[2017-05-02 20:28:56,494][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'skuDao' and 'com.orange.dao.product.SkuDao' mapperInterface
-[2017-05-02 20:28:56,495][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'skuDao'.
-[2017-05-02 20:28:56,495][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'typeDao' and 'com.orange.dao.product.TypeDao' mapperInterface
-[2017-05-02 20:28:56,496][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'typeDao'.
-[2017-05-02 20:28:56,529][INFO ][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172] - Loading properties file from class path resource [properties/jdbc.properties]
-[2017-05-02 20:28:56,876][DEBUG][org.mybatis.spring.SqlSessionFactoryBean:362] - Property 'configLocation' not specified, using default MyBatis Configuration
-[2017-05-02 20:28:57,036][DEBUG][org.mybatis.spring.SqlSessionFactoryBean:383] - Scanned package: 'com.orange.bean' for aliases
-[2017-05-02 20:28:57,040][DEBUG][org.mybatis.spring.SqlSessionFactoryBean:477] - Property 'mapperLocations' was not specified or no matching resources found
+  <system-err><![CDATA[[2017-05-19 17:23:25,577][INFO ][org.springframework.test.context.support.DefaultTestContextBootstrapper:260] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[2017-05-19 17:23:25,593][INFO ][org.springframework.test.context.support.DefaultTestContextBootstrapper:187] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@483b2426, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7c9819ed, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@55fee1c2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7503f8f7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6488e865, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@58e3c268]
+[2017-05-19 17:23:25,711][INFO ][org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [applicationContext.xml]
+[2017-05-19 17:23:25,833][INFO ][org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [F:\github\orangeShop\build\resources\main\config\mybatis.xml]
+[2017-05-19 17:23:25,879][INFO ][org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [F:\github\orangeShop\build\resources\main\config\spring.xml]
+[2017-05-19 17:23:26,101][INFO ][org.springframework.context.support.GenericApplicationContext:582] - Refreshing org.springframework.context.support.GenericApplicationContext@37360d4d: startup date [Fri May 19 17:23:26 CST 2017]; root of context hierarchy
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:292] - Ignored because not a concrete top-level class: file [F:\github\orangeShop\build\classes\test\com\orange\dao\ClassiFyDaoTest.class]
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:292] - Ignored because not a concrete top-level class: file [F:\github\orangeShop\build\classes\test\com\orange\dao\EmployeeDaoTest.class]
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:292] - Ignored because not a concrete top-level class: file [F:\github\orangeShop\build\classes\test\com\orange\dao\ProductDaoTest.class]
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:292] - Ignored because not a concrete top-level class: file [F:\github\orangeShop\build\classes\test\com\orange\dao\SpringTestCase.class]
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:292] - Ignored because not a concrete top-level class: file [F:\github\orangeShop\build\classes\test\com\orange\dao\TypeDaoTest.class]
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\AddrDao.class]
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\BuyerDao.class]
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\DetailDao.class]
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\EmployeeDao.class]
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\OrderDao.class]
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\product\BrandDao.class]
+[2017-05-19 17:23:26,280][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\product\ClassiFyDao.class]
+[2017-05-19 17:23:26,296][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\product\ColorDao.class]
+[2017-05-19 17:23:26,297][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\product\FeatureDao.class]
+[2017-05-19 17:23:26,298][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\product\ImgDao.class]
+[2017-05-19 17:23:26,299][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\product\ProductDao.class]
+[2017-05-19 17:23:26,300][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\product\SkuDao.class]
+[2017-05-19 17:23:26,300][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:286] - Identified candidate component class: file [F:\github\orangeShop\build\classes\main\com\orange\dao\product\TypeDao.class]
+[2017-05-19 17:23:26,302][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'addrDao' and 'com.orange.dao.AddrDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'addrDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'buyerDao' and 'com.orange.dao.BuyerDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'buyerDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'detailDao' and 'com.orange.dao.DetailDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'detailDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'employeeDao' and 'com.orange.dao.EmployeeDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'employeeDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'orderDao' and 'com.orange.dao.OrderDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'orderDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'brandDao' and 'com.orange.dao.product.BrandDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'brandDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'classiFyDao' and 'com.orange.dao.product.ClassiFyDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'classiFyDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'colorDao' and 'com.orange.dao.product.ColorDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'colorDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'featureDao' and 'com.orange.dao.product.FeatureDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'featureDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'imgDao' and 'com.orange.dao.product.ImgDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'imgDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'productDao' and 'com.orange.dao.product.ProductDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'productDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'skuDao' and 'com.orange.dao.product.SkuDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'skuDao'.
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:164] - Creating MapperFactoryBean with name 'typeDao' and 'com.orange.dao.product.TypeDao' mapperInterface
+[2017-05-19 17:23:26,303][DEBUG][org.mybatis.spring.mapper.ClassPathMapperScanner:200] - Enabling autowire by type for MapperFactoryBean with name 'typeDao'.
+[2017-05-19 17:23:26,323][INFO ][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172] - Loading properties file from class path resource [properties/jdbc.properties]
+[2017-05-19 17:23:26,550][DEBUG][org.mybatis.spring.SqlSessionFactoryBean:362] - Property 'configLocation' not specified, using default MyBatis Configuration
+[2017-05-19 17:23:26,687][DEBUG][org.mybatis.spring.SqlSessionFactoryBean:383] - Scanned package: 'com.orange.bean' for aliases
+[2017-05-19 17:23:26,689][DEBUG][org.mybatis.spring.SqlSessionFactoryBean:477] - Property 'mapperLocations' was not specified or no matching resources found
 ]]></system-err>
 </testsuite>

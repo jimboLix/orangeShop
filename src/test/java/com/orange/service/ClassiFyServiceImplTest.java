@@ -17,9 +17,9 @@ public class ClassiFyServiceImplTest extends SpringTestCase {
 
     @Test
     public void saveTest(){
-        ClassiFy classiFy = new ClassiFy();
-        classiFy.setParentId(0);
-        classiFy.setName("測試");
-        classiFyService.save(classiFy);
+//        ClassiFy classiFy = new ClassiFy();
+//        classiFy.setParentId(0);
+//        classiFy.setName("測試");
+//        classiFyService.save(classiFy);
     }
 }

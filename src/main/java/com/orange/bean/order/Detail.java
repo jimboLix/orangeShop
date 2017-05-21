@@ -1,12 +1,12 @@
 package com.orange.bean.order;
 
+import com.orange.bean.product.Product;
+
 import java.util.*;
 import java.io.Serializable;
 
 /**
- * 
- * @author lixu
- * @Date [2014-3-28 下午04:38:53]
+ * 订单详情
  */
 public class Detail implements Serializable {
 	/**
@@ -22,6 +22,15 @@ public class Detail implements Serializable {
 	private String size;
 	private Double skuPrice;
 	private Integer amount;
+	private Product product;
+
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
 
 	public Integer getId() {
 		return id;

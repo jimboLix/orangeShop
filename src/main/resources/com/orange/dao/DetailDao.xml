@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.orange.dao.DetailDao">
-	<resultMap id="detail" type="Detail">
+	<resultMap id="detail" type="com.orange.bean.order.Detail">
 		<result property="id" column="id" />
 		<result property="orderId" column="order_id" />
 		<result property="productNo" column="product_no" />
@@ -68,13 +68,6 @@
 		</foreach>
 	</select>
 
-	<!-- 根据主键删除 -->
-	<delete id="deleteByKey" parameterType="hashMap">
-		DELETE FROM t_detail
-		WHERE
-		id=#{id}
-	</delete>
-
 	<!-- 根据主键批量删除 -->
 	<delete id="deleteByKeys">
 		DELETE FROM t_detail
@@ -119,17 +112,6 @@
 		WHERE
 		id=#{id}
 	</update>
-	<!-- 分页 -->
-	<select id="getDetailListWithPage" parameterType="com.orange.bean.order.Detail" resultMap="detail">
-		<include refid="detailSelector" />
-		<include refid="detailListWhere" />
-		<include refid="detailListLimit" />
-	</select>
-	<!-- 数据总数 -->
-	<select id="getDetailListCount" parameterType="com.orange.bean.order.Detail" resultType="int">
-		SELECT count(1) FROM t_detail
-		<include refid="detailListWhere" />
-	</select>
 	<!-- 数据集合 -->
 	<select id="getDetailList" parameterType="com.orange.bean.order.Detail" resultMap="detail">
 		<include refid="detailSelector" />

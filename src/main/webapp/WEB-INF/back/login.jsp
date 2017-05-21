@@ -14,7 +14,17 @@
     <c:set var="base" value="${pageContext.request.contextPath}"></c:set>
     <link href="${base}/css/bootstrap.min.css" rel="stylesheet">
     <link href="${base}/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="${base}/js/jquery-1.8.0.min.js"></script>
+    <script>
+        $(function () {
+            var val = $("#message").val();
+            if(val === undefined || val === "" || val === null){
 
+            }else {
+                alert(val);
+            }
+        })
+    </script>
 </head>
 <body background="${base}/images/020.jpg">
 
@@ -72,6 +82,7 @@
                 </div>
             </form>
         </div>
+        <input value="${error}" id="message" type="hidden">
         <div class="col-md-2">
         </div>
     </div>

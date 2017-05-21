@@ -40,7 +40,7 @@
     <script>
         function dosubmit(){
             var options = {
-                //图片上传的路径
+                //提交的路径
                 url:'${base}/product/update.do',
                 //ajax异步提交的方式
                 type:'post',

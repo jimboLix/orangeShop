@@ -1,14 +1,16 @@
 package com.orange.bean.order;
 
+import com.orange.bean.PageBean;
+
 import java.util.*;
 import java.io.Serializable;
 
 /**
  * 订单  --主
- * @author lixu
- * @Date [2014-3-28 下午04:38:53]
+ * @author ruihui.li
+ * @Date [2017-5-18 下午04:38:53]
  */
-public class Order implements Serializable {
+public class Order extends PageBean implements Serializable {
 	/**
 	 * 序列化ID
 	 */
@@ -28,7 +30,22 @@ public class Order implements Serializable {
 	private Date createDate;
 	private String note;
 	private String buyerId;
-	
+	private String stateName;
+
+	public void setStateName(String stateName) {
+		this.stateName = stateName;
+	}
+
+	private List<Detail> details;
+
+	public List<Detail> getDetails() {
+		return details;
+	}
+
+	public void setDetails(List<Detail> details) {
+		this.details = details;
+	}
+
 	/** 特殊处理字段   */
 	/** 支付方式           */
 	public String getPaymentWayName() {

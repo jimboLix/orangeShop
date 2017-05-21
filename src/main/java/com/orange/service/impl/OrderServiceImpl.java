@@ -100,4 +100,24 @@ public class OrderServiceImpl implements OrderService {
 
         return order;
     }
+
+    @Override
+    public List<Order> getOrderList(Order order) {
+        return orderDao.getOrderList(order);
+    }
+
+    @Override
+    public int getOrderListCount(Order orderQuery) {
+        return orderDao.getOrderListCount(orderQuery);
+    }
+
+    @Override
+    public List<Order> getOrderListWithPage(Order orderQuery) {
+        return orderDao.getOrderListWithPage(orderQuery);
+    }
+
+    @Override
+    public void updateOrderByKey(Order order) {
+        orderDao.updateOrderByKey(order);
+    }
 }

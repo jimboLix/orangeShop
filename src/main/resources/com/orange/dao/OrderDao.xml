@@ -71,15 +71,6 @@
 		</where>
 	</sql>
 
-	<sql id="orderListOrder">
-		<if test="orderFields != null and orderFields.size >0">
-		order by 
-			<foreach collection="orderFields" separator="," item="orderField">
-				${orderField.fieldName} ${orderField.order}
-			</foreach>
-		</if>
-	</sql>
-
 	<sql id="orderListLimit">
 		<if test="startRow != null">
 			limit #{startRow},#{pageSize}
@@ -93,7 +84,7 @@
 		id=#{id}
 	</select>
 	<select id="getOrdersByKeys" resultMap="order" parameterType="ArrayList">
-		SELECT id,oid,deliver_fee,payable_fee,total_price,payment_way,payment_cash,delivery,isConfirm,is_paiy,state,create_date,note,buyer_id FROM bbs_order
+		SELECT id,oid,deliver_fee,payable_fee,total_price,payment_way,payment_cash,delivery,isConfirm,is_paiy,state,create_date,note,buyer_id FROM t_order
 		WHERE
 		id in
 		<foreach collection="list" separator="," item="id" open="(" close=")">
@@ -120,7 +111,7 @@
 
 	<!-- 根据主键更新 -->
 	<update id="updateOrderByKey" parameterType="Order">
-		UPDATE bbs_order
+		UPDATE t_order
 		<set>
 			<trim suffixOverrides=",">
 				<if test="id != null">
@@ -178,7 +169,7 @@
 	</select>
 	<!-- 数据总数 -->
 	<select id="getOrderListCount" parameterType="com.orange.bean.order.Order" resultType="int">
-		SELECT count(1) FROM bbs_order
+		SELECT count(1) FROM t_order
 		<include refid="orderListWhere" />
 	</select>
 	<!-- 数据集合 -->
@@ -283,4 +274,8 @@
 					</if>
 		</trim>
 	</insert>
+	<sql id="orderListOrder">
+			order by
+				id DESC
+	</sql>
 </mapper>

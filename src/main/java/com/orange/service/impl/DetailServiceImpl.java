@@ -38,23 +38,7 @@ public class DetailServiceImpl implements DetailService{
         return detailDao.getDetailByKey(id);
     }
 
-    @Transactional(readOnly = true)
-    public List<Detail> getDetailsByKeys(List<Integer> idList) {
-        return detailDao.getDetailsByKeys(idList);
-    }
 
-    /**
-     * 根据主键删除
-     *
-     * @return
-     */
-    public Integer deleteByKey(Integer id) {
-        return detailDao.deleteByKey(id);
-    }
-
-    public Integer deleteByKeys(List<Integer> idList) {
-        return detailDao.deleteByKeys(idList);
-    }
 
     /**
      * 根据主键更新

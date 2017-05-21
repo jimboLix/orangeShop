@@ -174,6 +174,10 @@
             window.location.href = '${base}/shopping/cart.shtml?skuId=' + skuId + '&amount=' + num
                 + '&buyLimit=' + buyLimit + '&productId=' + productId;
         }
+
+        function myOrder() {
+            window.location.href='${base}/order/myOrder.shtml';
+        }
     </script>
 </head>
 <body>
@@ -295,7 +299,7 @@
     <div class="r" style="width: 640px">
         <ul class="uls form">
             <li><h2>${product.name }</h2></li>
-            <li><label>巴 巴 价：</label><span class="word"><b class="f14 red mr" id="price">￥128.00</b>(市场价:<del
+            <li><label>盛 唐 价：</label><span class="word"><b class="f14 red mr" id="price">￥128.00</b>(市场价:<del
                     id="mprice">￥150.00</del>)</span></li>
             <li><label>商品评价：</label><span class="word"><span class="val_no val3d4" title="4分">4分</span><var
                     class="blue">(已有888人评价)</var></span></li>

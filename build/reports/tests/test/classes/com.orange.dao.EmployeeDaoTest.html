@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">-</div>
+<div class="counter">0.505s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox success" id="successRate">
-<div class="percent">-</div>
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -64,7 +64,10 @@
 <a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Standard error</a>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
@@ -77,13 +80,32 @@
 <th>Result</th>
 </tr>
 </thead>
+<tr>
+<td class="success">getEmployeeByKeyTest</td>
+<td>0.505s</td>
+<td class="success">passed</td>
+</tr>
 </table>
 </div>
 <div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Employee [username=admin,password=123456,degree=null,email=null,gender=1,imgUrl=null,phone=null,realName=系统管理员,school=null,isDel=1]
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[2017-05-02 20:28:57,547][INFO ][org.springframework.test.context.support.DefaultTestContextBootstrapper:260] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-[2017-05-02 20:28:57,548][INFO ][org.springframework.test.context.support.DefaultTestContextBootstrapper:187] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3b20d6b2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f4308ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@504619b1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c4acb0f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@61621372, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@16117bc1]
+<pre>[2017-05-19 17:23:27,359][INFO ][org.springframework.test.context.support.DefaultTestContextBootstrapper:260] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[2017-05-19 17:23:27,359][INFO ][org.springframework.test.context.support.DefaultTestContextBootstrapper:187] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@13379863, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@22ad2b43, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@139fa627, org.springframework.test.context.support.DirtiesContextTestExecutionListener@146ac650, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3bb1b03e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@700d7338]
+[2017-05-19 17:23:27,359][DEBUG][org.mybatis.spring.SqlSessionUtils:104] - Creating a new SqlSession
+[2017-05-19 17:23:27,375][DEBUG][org.mybatis.spring.SqlSessionUtils:140] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@527b28dc] was not registered for synchronization because synchronization is not active
+[2017-05-19 17:23:27,761][DEBUG][org.mybatis.spring.transaction.SpringManagedTransaction:86] - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5f4ffc44] will not be managed by Spring
+[2017-05-19 17:23:27,776][DEBUG][com.orange.dao.EmployeeDao.getEmployee:139] - ==&gt;  Preparing: SELECT username,password,degree,email,gender,img_url,phone,real_name,school,is_del FROM t_employee WHERE username =? and password =? 
+[2017-05-19 17:23:27,838][DEBUG][com.orange.dao.EmployeeDao.getEmployee:139] - ==&gt; Parameters: admin(String), 123456(String)
+[2017-05-19 17:23:27,855][DEBUG][com.orange.dao.EmployeeDao.getEmployee:139] - &lt;==      Total: 1
+[2017-05-19 17:23:27,862][DEBUG][org.mybatis.spring.SqlSessionUtils:168] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@527b28dc]
 </pre>
 </span>
 </div>
@@ -95,7 +117,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 3.5</a> at 2017-5-2 20:28:57</p>
+<a href="http://www.gradle.org">Gradle 3.5</a> at 2017-5-19 17:23:28</p>
 </div>
 </div>
 </body>
