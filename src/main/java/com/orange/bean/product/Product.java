@@ -40,6 +40,8 @@ public class Product implements Serializable {
 	//商品类别
 	private Integer classId;
 
+
+
 	public Integer getClassId() {
 		return classId;
 	}

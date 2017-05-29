@@ -1,10 +1,12 @@
 package com.orange.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.orange.bean.user.Buyer;
 import com.orange.bean.user.Employee;
 import com.orange.service.BuyerService;
 import com.orange.service.user.EmployeeService;
 import com.orange.util.Constants;
+import com.orange.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author fengyan.li
@@ -88,7 +92,7 @@ public class LoginController {
     public String buyerLogin(HttpServletRequest request, String username, String password, String targetUrl) {
         Buyer buyer = buyerService.getBuyerByUserNameAndPassword(username, password);
         if (null == buyer) {
-            return "buyerLogin";
+            return "login";
         }
         if (!StringUtils.isEmpty(targetUrl)) {
             String contextPath = request.getContextPath();
@@ -107,5 +111,33 @@ public class LoginController {
     public String buyerToLogin(String url, ModelMap modelMap) {
         modelMap.put("url", url);
         return "login";
+    }
+
+    /**
+     * 购买者退出登录
+     * @param request
+     * @return
+     */
+    @RequestMapping("/logout.shtml")
+    public String loginOut(HttpServletRequest request,ModelMap modelMap,String url){
+        modelMap.put("url",url);
+        request.getSession().invalidate();
+        return "redirect:/login/toLogin.shtml";
+    }
+
+    /**
+     * 用户注册
+     * @return
+     */
+    @RequestMapping("/register.shtml")
+    public String register(){
+        return "register";
+    }
+    @RequestMapping("/doRegister.shtml")
+    public void doRegister(Buyer buyer,HttpServletResponse response){
+        buyerService.addBuyer(buyer);
+        Map<String,String> map = new HashMap<>();
+        map.put("data","Register SuccessFull!");
+        ResponseUtil.renderJson(response, JSON.toJSONString(map));
     }
 }

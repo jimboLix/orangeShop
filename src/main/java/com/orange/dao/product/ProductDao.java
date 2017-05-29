@@ -32,23 +32,9 @@ public interface ProductDao {
 
     /**
      * 商品上下架
-     *
      */
     void isShow(Product product);
 
-    /**
-     * 根据主键批量删除
-     *
-     * @param productQuery
-     */
-    Integer deleteByKeys(List<Integer> idList);
-
-    /**
-     * 根据主键更新
-     *
-     * @param productQuery
-     */
-    Integer updateProductByKey(Product product);
 
     /**
      * 分页查询
@@ -70,4 +56,7 @@ public interface ProductDao {
      * @param product
      */
     void update(Product product);
+
+    List<Product> getProduct(Product product);
+
 }

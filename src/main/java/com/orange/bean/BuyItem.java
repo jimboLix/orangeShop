@@ -14,7 +14,7 @@ public class BuyItem implements Serializable {
     private static final long serialVersionUID = -4402387818338427248L;
     private Sku sku;
     //购买数量
-    private Integer ammount = 1;
+    private Integer amount = 1;
 
     public Sku getSku() {
         return sku;
@@ -24,18 +24,18 @@ public class BuyItem implements Serializable {
         this.sku = sku;
     }
 
-    public Integer getAmmount() {
-        return ammount;
+    public Integer getAmount() {
+        return amount;
     }
 
-    public void setAmmount(Integer ammount) {
-        this.ammount = ammount;
+    public void setAmount(Integer amount) {
+        this.amount = amount;
     }
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ammount;
+        result = prime * result + amount;
         result = prime * result + ((sku == null) ? 0 : sku.hashCode());
         return result;
     }

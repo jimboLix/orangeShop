@@ -24,11 +24,11 @@ public class BuyCart implements Serializable{
         if(items.contains(item)){
             for(BuyItem it : items){
                 if(it.equals(item)){
-                    int result = it.getAmmount() + item.getAmmount();
+                    int result = it.getAmount() + item.getAmount();
                     if(it.getSku().getSkuUpperLimit() >= result){
-                        it.setAmmount(result);
+                        it.setAmount(result);
                     }else{
-                        it.setAmmount(it.getSku().getSkuUpperLimit());
+                        it.setAmount(it.getSku().getSkuUpperLimit());
                     }
                 }
             }
@@ -48,7 +48,7 @@ public class BuyCart implements Serializable{
     public int getProductAmount(){
         int result = 0;
         for(BuyItem item : items){
-            result += item.getAmmount();
+            result += item.getAmount();
         }
         return result;
     }
@@ -57,7 +57,7 @@ public class BuyCart implements Serializable{
     public Double getProductPrice(){
         Double result = 0.00;
         for(BuyItem item : items){
-            result += item.getSku().getSkuPrice()*item.getAmmount();
+            result += item.getSku().getSkuPrice()*item.getAmount();
         }
         return result;
     }

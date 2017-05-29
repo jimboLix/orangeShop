@@ -24,13 +24,12 @@
         <result column="size" property="size" jdbcType="VARCHAR"/>
         <result property="description" column="description"/>
         <result property="packageList" column="package_list"/>
-        <result property="classId" column="class_id"/>
     </resultMap>
 
     <sql id="selectFields">
         SELECT
             id,no,name,weight,is_new,is_hot,is_commend,create_time,create_user_id,check_time,check_user_id,
-            is_show,is_del,type_id,brand_id,keywords,sales,feature,color,size,class_id
+            is_show,is_del,type_id,brand_id,keywords,sales,feature,color,size
         from t_product
     </sql>
 
@@ -53,9 +52,6 @@
             </if>
             <if test="isShow != null">
                 and is_show=#{isShow}
-            </if>
-            <if test="classId != null">
-                and class_id=#{classId}
             </if>
         </where>
     </sql>
@@ -146,9 +142,6 @@
             <if test="size != null">
                 size,
             </if>
-            <if test="classId != null">
-                class_id
-            </if>
         </trim>
         VALUES
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -218,9 +211,6 @@
             <if test="size != null">
                 #{size},
             </if>
-            <if test="classId != null">
-                #{classId}
-            </if>
         </trim>
     </insert>
 
@@ -265,5 +255,10 @@
     <select id="getProductByKey" parameterType="Integer" resultMap="BaseResultMap">
         select * from t_product
              where   id=#{id}
+    </select>
+
+    <select id="getProduct" parameterType="com.orange.bean.product.Product" resultMap="BaseResultMap">
+        <include refid="selectFields"/>
+        <include refid="condition"/>
     </select>
 </mapper>

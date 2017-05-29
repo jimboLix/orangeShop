@@ -120,7 +120,7 @@
                         </td>
                         <td>${item.sku.skuPrice}</td>
                         <td><a onclick="subProductAmount(${item.sku.id })" class="inb arr" title="减" href="javascript:void(0);">-</a>
-                            <input type="text" id="num${item.sku.id }" readonly="readonly" value="${item.ammount }" name="" size="1" class="txts">
+                            <input type="text" id="num${item.sku.id }" readonly="readonly" value="${item.amount}" name="" size="1" class="txts">
                             <a onclick="addProductAmount(${item.sku.id },${item.sku.skuUpperLimit })" class="inb arr" title="加" href="javascript:void(0);">+</a>
                         </td>
                         <td class="blue"><a onclick="delProduct(${item.sku.id })" title="删除" href="javascript:void(0);">删除</a></td>

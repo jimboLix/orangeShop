@@ -16,5 +16,13 @@ public interface TypeService {
      * 集合查询
      * @param type
      */
-    public List<Type> getTypeList(Type type);
+    List<Type> getTypeList(Type type);
+
+    int getCount(Type type);
+
+    List<Type> getTypeListByPage(Type type);
+
+    void save(Type type);
+
+    void deleteByIds(List<Integer> ids);
 }

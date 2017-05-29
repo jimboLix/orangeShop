@@ -1,12 +1,10 @@
 package com.orange.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.orange.util.Constants;
 import com.orange.util.FileUtil;
-import com.orange.util.PathUtil;
 import com.orange.util.ResponseUtil;
 import net.fckeditor.response.UploadResponse;
-import org.apache.commons.io.FilenameUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,11 +14,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Map;
-import java.util.Random;
 import java.util.Set;
 
 /**
@@ -33,8 +27,8 @@ import java.util.Set;
 @RequestMapping("/upload")
 public class UploadController {
 
-    private static final String SERVER_PATH = "http://localhost:8087/file/";
-    private static final String PATH="E://text";
+    private static final String SERVER_PATH = Constants.IMAGE_URL;
+    private static final String PATH=Constants.PATH;
     @RequestMapping(value = "/uploadPic.do",method = RequestMethod.POST)
     public void uploadPic(HttpServletRequest request, HttpServletResponse response){
         String path = null;

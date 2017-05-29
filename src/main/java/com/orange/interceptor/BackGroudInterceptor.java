@@ -18,7 +18,7 @@ public class BackGroudInterceptor implements HandlerInterceptor {
     //不需要拦截的地址
     private String[] allowPath = {"/orangeShop/login/toLogin.do","/orangeShop/login/doLogin.do", "/orangeShop/product/detail.shtml", "/orangeShop/shopping/cart.shtml",
             "/orangeShop/shopping/clearCart.shtml", "/orangeShop/shopping/deleteItem.shtml","/orangeShop/login/toLogin.shtml",
-            "/orangeShop/login/doLogin.shtml"
+            "/orangeShop/login/doLogin.shtml","/orangeShop/login/register.shtml","/orangeShop/login/doRegister.shtml"
     };
 
     @Override

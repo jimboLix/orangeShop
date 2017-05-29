@@ -1,56 +1,24 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <c:import url="../common.jsp"/>
+    <%@include file="../common.jsp"%>
     <title>Title</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
 <div class="easyui-layout" data-options="fit:true">
+    <div id="wu-dialog-2"></div>
+    <div class="wu-toolbar-button">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAdd()" plain="true">添加</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="remove()" plain="true">删除</a>
+    </div>
     <!-- Begin of toolbar -->
     <!-- End of toolbar -->
     <table id="wu-datagrid-2" class="easyui-datagrid" toolbar="#wu-toolbar-2"></table>
 </div>
 <!-- End of easyui-dialog -->
 <script type="text/javascript">
-    /**
-     * Name 添加记录
-     */
-    function add(){
-        $('#wu-form-2').form('submit', {
-            url:'',
-            success:function(data){
-                if(data){
-                    $.messager.alert('信息提示','提交成功！','info');
-                    $('#wu-dialog-2').dialog('close');
-                }
-                else
-                {
-                    $.messager.alert('信息提示','提交失败！','info');
-                }
-            }
-        });
-    }
-
-    /**
-     * Name 修改记录
-     */
-    function edit(){
-        $('#wu-form-2').form('submit', {
-            url:'',
-            success:function(data){
-                if(data){
-                    $.messager.alert('信息提示','提交成功！','info');
-                    $('#wu-dialog-2').dialog('close');
-                }
-                else
-                {
-                    $.messager.alert('信息提示','提交失败！','info');
-                }
-            }
-        });
-    }
 
     /**
      * Name 删除记录
@@ -58,25 +26,27 @@
     function remove(){
         $.messager.confirm('信息提示','确定要删除该记录？', function(result){
             if(result){
-                var items = $('#wu-datagrid-2').datagrid('getSelections');
+                var items = $('#wu-datagrid-2').datagrid('getChecked');
                 var ids = [];
                 $(items).each(function(){
-                    ids.push(this.productid);
+                    ids.push(this.id);
                 });
-                //alert(ids);return;
-                $.ajax({
-                    url:'',
-                    data:'',
-                    success:function(data){
-                        if(data){
-                            $.messager.alert('信息提示','删除成功！','info');
-                        }
-                        else
-                        {
-                            $.messager.alert('信息提示','删除失败！','info');
-                        }
-                    }
-                });
+               $.ajax({
+                   url:'${base}/type/delete.do',
+                   type:'post',
+                   data:'ids='+ids,
+                   success:function(data){
+                       if(data){
+                           $('#wu-datagrid-2').datagrid('reload');
+                           $.messager.alert('信息提示','删除成功！','info');
+                       }
+                       else
+                       {
+                           $.messager.alert('信息提示','删除失败！','info');
+                           $('#wu-datagrid-2').datagrid('reload');
+                       }
+                   }
+               })
             }
         });
     }
@@ -89,16 +59,16 @@
         $('#wu-dialog-2').dialog({
             closed: false,
             modal:true,
-            title: "添加信息",
-            buttons: [{
-                text: '确定',
-                iconCls: 'icon-ok',
-                handler: add
-            }, {
+            width: 500,
+            height:300,
+            title: "添加类别",
+            href:'${base}/type/toAdd.do',
+            buttons: [ {
                 text: '取消',
                 iconCls: 'icon-cancel',
                 handler: function () {
                     $('#wu-dialog-2').dialog('close');
+                    $('#wu-datagrid-2').datagrid('reload');
                 }
             }]
         });
@@ -110,35 +80,13 @@
     function openEdit(){
         $('#wu-form-2').form('clear');
         var item = $('#wu-datagrid-2').datagrid('getSelected');
-        alert(item.id);
-        $.ajax({
-            url:'',
-            data:'',
-            success:function(data){
-                if(data){
-                    $('#wu-dialog-2').dialog('close');
-                }
-                else{
-                    //绑定值
-                    $('#wu-form-2').form('load', data)
-                }
-            }
-        });
         $('#wu-dialog-2').dialog({
             closed: false,
             modal:true,
-            title: "修改信息",
-            buttons: [{
-                text: '确定',
-                iconCls: 'icon-ok',
-                handler: edit
-            }, {
-                text: '取消',
-                iconCls: 'icon-cancel',
-                handler: function () {
-                    $('#wu-dialog-2').dialog('close');
-                }
-            }]
+            title: "类别修改",
+            width: 500,
+            height:300,
+            href:'${base}/type/toEdit.do?id='+item.id,
         });
     }
 
@@ -176,7 +124,7 @@
      * Name 载入数据
      */
     $('#wu-datagrid-2').datagrid({
-        url:'${base}/class/page.do',
+        url:'${base}/type/page.do',
 //        loadFilter:pagerFilter,
         rownumbers:true,
         singleSelect:false,
@@ -188,7 +136,7 @@
         columns:[[
             { checkbox:true},
             { field:'id',title:'编号',width:200,sortable:true},
-            { field:'name',title:'分類名稱',width:200,sortable:true},
+            { field:'name',title:'分类名称',width:200,sortable:true},
             { field:'parentId',title:'上一級',width:100}
         ]]
     });

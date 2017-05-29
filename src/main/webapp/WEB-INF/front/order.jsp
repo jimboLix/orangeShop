@@ -19,6 +19,7 @@
         </p>
         <ul class="r uls">
             <li class="dev">您好,欢迎来到盛唐文化网！</li>
+            <c:if test="${sessionScope.get('buyer_session') != null}"><li class="dev">欢迎！${sessionScope.get('buyer_session').username}</li></c:if>
             <li class="dev"><a href="#" title="退出">[退出]</a></li>
             <li class="dev"><a href="#" title="在线客服">在线客服</a></li>
             <li class="dev after"><a href="#" title="English">English</a></li>
@@ -27,7 +28,7 @@
 </div>
 <div class="w loc">
     <div class="h-title">
-        <div class="h-logo"><a href="http://localhost:8080"><img src="/res/img/pic/logo-1.png"/></a></div>
+        <div class="h-logo"><a href="http://localhost:8080"><img src="${base}/images/pic/logo.jpg"/></a></div>
         <div class="h-search">
             <input type="text"/>
             <div class="h-se-btn"><a href="#">搜索</a></div>

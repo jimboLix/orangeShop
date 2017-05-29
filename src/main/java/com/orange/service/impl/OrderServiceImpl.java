@@ -93,7 +93,7 @@ public class OrderServiceImpl implements OrderService {
             //商品销售价
             detail.setSkuPrice(item.getSku().getSkuPrice());
             //购物数量
-            detail.setAmount(item.getAmmount());
+            detail.setAmount(item.getAmount());
             //保存
             detailService.addDetail(detail);
         }

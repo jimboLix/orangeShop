@@ -5,8 +5,8 @@ import java.util.Date;
 
 /**
  * 购买者
- * @author lixu
- * @Date [2014-3-28 下午04:38:53]
+ * @author fengyan.li
+ * @Date [2017-5-2 下午04:38:53]
  */
 public class Buyer implements Serializable {
 	/**
@@ -25,6 +25,7 @@ public class Buyer implements Serializable {
 	private String town;
 	private String addr;
 	private Integer isDel;
+	private String phone;
 	
 	public enum Gender {
 
@@ -108,6 +109,15 @@ public class Buyer implements Serializable {
 	public void setIsDel(Integer isDel) {
 		this.isDel = isDel;
 	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
 	@Override
 	public String toString() {
 		return "Buyer [username=" + username + ", password=" + password

@@ -1,11 +1,10 @@
 package com.orange.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.orange.bean.product.*;
 import com.orange.bean.vo.ProductVo;
 import com.orange.service.*;
-import com.orange.util.PathUtil;
+import com.orange.util.Constants;
 import com.orange.util.ResponseUtil;
 import com.orange.util.ResultInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +12,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -199,7 +196,7 @@ public class ProductController {
         }
         model.addAttribute("skus",skuList);
         model.addAttribute("colors",colors);
-        model.addAttribute("allUrl", PathUtil.SERVER_PATH + img.getUrl());
+        model.addAttribute("allUrl", Constants.IMAGE_URL+ img.getUrl());
         model.addAttribute("dis", product.getDescription());
         return "productDetail";
     }

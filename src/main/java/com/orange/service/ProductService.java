@@ -53,4 +53,6 @@ public interface ProductService {
      */
     Product getProductByKey(Integer id);
 
+    List<Product> getProduct(Product product);
+
 }

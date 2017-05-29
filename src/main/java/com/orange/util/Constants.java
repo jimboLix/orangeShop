@@ -12,6 +12,10 @@ public class Constants {
      */
     public static final String IMAGE_URL = "http://localhost:8087/file/";
     /**
+     * 配置tomcat虚拟路径用于存放图片
+     */
+    public static final String PATH="E://text";
+    /**
      * 购买者用户Session
      */
     public static final String BUYER_SESSION = "buyer_session";

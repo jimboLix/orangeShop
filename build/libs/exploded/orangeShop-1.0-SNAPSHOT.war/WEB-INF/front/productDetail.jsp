@@ -178,6 +178,22 @@
         function myOrder() {
             window.location.href='${base}/order/myOrder.shtml';
         }
+
+        function login() {
+            window.location.href='${base}/login/toLogin.shtml?url=/orangeShop/product/detail.shtml?id=${product.id}'
+        }
+
+        function shopcar(){
+            window.location.href='${base}/shopping/cart.shtml'
+        }
+
+        function logout(){
+            window.location.href='${base}/login/logout.shtml?url=/orangeShop/product/detail.shtml?id=${product.id}'
+        }
+        
+        function register() {
+            window.location.href='${base}/login/register.shtml'
+        }
     </script>
 </head>
 <body>
@@ -185,17 +201,19 @@
     <div class="bar_w">
         <p class="l">
 		<span class="l">
-			收藏本网站！北京<a href="#" title="更换">[更换]</a>
+			收藏本网站！南京<a href="#" title="更换">[更换]</a>
 		</span>
         </p>
         <ul class="r uls">
             <li class="dev">
                 您好,欢迎来到盛唐文化网！
             </li>
-            <li class="dev"><a href="javascript:void(0)" onclick="login()" title="登陆">[登陆]</a></li>
+            <c:if test="${sessionScope.get('buyer_session') == null}"><li class="dev"><a href="javascript:void(0)" onclick="login()">[登陆]</a></li></c:if>
+            <c:if test="${sessionScope.get('buyer_session') != null}"><li class="dev">欢迎！${sessionScope.get('buyer_session').username}</li></c:if>
             <li class="dev"><a href="javascript:void(0)" onclick="register()" title="免费注册">[免费注册]</a></li>
             <li class="dev"><a href="javascript:void(0)" onclick="logout()" title="退出">[退出]</a></li>
             <li class="dev"><a href="javascript:void(0)" onclick="myOrder()" title="我的订单">我的订单</a></li>
+            <li class="dev"><a href="javascript:void(0)" onclick="shopcar()" title="购物车">购物车</a></li>
             <li class="dev"><a href="#" title="在线客服">在线客服</a></li>
             <li class="dev after"><a href="#" title="English">English</a></li>
         </ul>
@@ -203,90 +221,12 @@
 </div>
 <div class="w loc">
     <div class="h-title">
-        <div class="h-logo"><a href="http://localhost:8080"><img src="/res/img/pic/logo-1.png"/></a></div>
+        <div class="h-logo"><a href="http://localhost:8080"></a></div>
         <div class="h-search">
             <input type="text"/>
             <div class="h-se-btn"><a href="#">搜索</a></div>
         </div>
     </div>
-    <dl id="cart" class="cart r">
-        <dt><a href="#" title="结算">结算</a>购物车:<b id="">123</b>件</dt>
-        <dd class="hidden">
-            <p class="alg_c hidden">购物车中还没有商品，赶紧选购吧！</p>
-            <h3 title="最新加入的商品">最新加入的商品</h3>
-            <ul class="uls">
-                <li>
-                    <a href="#"
-                       title="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元">
-                        <img src="${base}/images/p50x50.jpg"
-                             alt="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元"/></a>
-                    <p class="dt"><a href="#"
-                                     title="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元">依琦莲2014瑜伽服套装新
-                        瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元</a></p>
-                    <p class="dd">
-                        <b><var>¥128</var><span>x1</span></b>
-                        <a href="javascript:void(0);" title="删除" class="del">删除</a>
-                    </p>
-                </li>
-                <li>
-                    <a href="#"
-                       title="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元">
-                        <img src="${base}/images/p50x50.jpg"
-                             alt="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元"/></a>
-                    <p class="dt"><a href="#"
-                                     title="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元">依琦莲2014瑜伽服套装新
-                        瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元</a></p>
-                    <p class="dd">
-                        <b><var>¥128</var><span>x1</span></b>
-                        <a href="javascript:void(0);" title="删除" class="del">删除</a>
-                    </p>
-                </li>
-                <li>
-                    <a href="#"
-                       title="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元">
-                        <img src="${base}/images/p50x50.jpg"
-                             alt="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元"/></a>
-                    <p class="dt"><a href="#"
-                                     title="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元">依琦莲2014瑜伽服套装新
-                        瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元</a></p>
-                    <p class="dd">
-                        <b><var>¥128</var><span>x1</span></b>
-                        <a href="javascript:void(0);" title="删除" class="del">删除</a>
-                    </p>
-                </li>
-                <li>
-                    <a href="#"
-                       title="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元">
-                        <img src="${base}/images/p50x50.jpg"
-                             alt="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元"/></a>
-                    <p class="dt"><a href="#"
-                                     title="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元">依琦莲2014瑜伽服套装新
-                        瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元</a></p>
-                    <p class="dd">
-                        <b><var>¥128</var><span>x1</span></b>
-                        <a href="javascript:void(0);" title="删除" class="del">删除</a>
-                    </p>
-                </li>
-                <li>
-                    <a href="#"
-                       title="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元">
-                        <img src="${base}/images/p50x50.jpg"
-                             alt="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元"/></a>
-                    <p class="dt"><a href="#"
-                                     title="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元">依琦莲2014瑜伽服套装新
-                        瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元</a></p>
-                    <p class="dd">
-                        <b><var>¥128</var><span>x1</span></b>
-                        <a href="javascript:void(0);" title="删除" class="del">删除</a>
-                    </p>
-                </li>
-            </ul>
-            <div>
-                <p>共<b>5</b>件商品&nbsp;&nbsp;&nbsp;&nbsp;共计<b class="f20">¥640.00</b></p>
-                <a href="#" title="去购物车结算" class="inb btn120x30c">去购物车结算</a>
-            </div>
-        </dd>
-    </dl>
 </div>
 
 <div class="w ofc mt">

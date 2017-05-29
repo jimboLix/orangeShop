@@ -103,4 +103,18 @@ public class ProductServiceImpl implements ProductService {
         }
         return null;
     }
+
+    @Override
+    public List<Product> getProduct(Product product) {
+        List<Product> productList = productDao.getProduct(product);
+
+        for (Product p : productList){
+            List<Img> imgs = imgService.getImgByProductId(p.getId());
+            if(imgs != null && imgs.size() >0){
+                p.setImg(imgs.get(0));
+            }
+        }
+
+        return productList;
+    }
 }

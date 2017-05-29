@@ -1,11 +1,13 @@
 package com.orange.bean.product;
 
+import com.orange.bean.PageBean;
+
 import java.io.Serializable;
 
 /**
  * 商品类型
  */
-public class Type implements Serializable {
+public class Type extends PageBean implements Serializable {
 	/**
 	 * 序列化ID
 	 */

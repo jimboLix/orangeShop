@@ -19,7 +19,7 @@
         font-size: 14px;
         font-weight: normal;
         border: 1px solid #C5C5C5;
-        background: url('/images/bg_ch.gif') repeat-x scroll 0% 0% transparent;
+        background: url('${base}/images/bg_ch.gif') repeat-x scroll 0% 0% transparent;
     }
     a {
         color: #06C;
@@ -32,7 +32,7 @@
     .pn-flabel{background-color:#e6f2fe;text-align:right;padding-right:3px; color:#000;}
     .pn-flabel-h{height:27px;}
 </style>
-<script type="text/javascript" src="/fckeditor/fckeditor.js"></script>
+<script type="text/javascript" src="${base}/fckeditor/fckeditor.js"></script>
 <script>
     $(function () {
         var tObj;
@@ -50,7 +50,7 @@
                 tObj = $(this);
                 if(ref == '#tab_2'){
                     var fck = new FCKeditor("productdesc");
-                    fck.BasePath = "/fckeditor/";
+                    fck.BasePath = "${base}/fckeditor/";
                     fck.Height = 400 ;
                     fck.Config["ImageUploadURL"] = "${base}/upload/uploadFck.do";
                     fck.ReplaceTextarea();

@@ -1,0 +1,6 @@
+
+Ksquid:S1854"6Remove this useless assignment to local variable "id".(ѓєРЭ
+Lsquid:S1854"7Remove this useless assignment to local variable "ids".(э­Їь
+=squid:S1481"(Remove this unused "ids" local variable.(э­Їь
+<squid:S1481"'Remove this unused "id" local variable.(ѓєРЭ
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ЩтЂР8їЌ¶Е+

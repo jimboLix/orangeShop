@@ -3,11 +3,11 @@
 
 <mapper namespace="com.orange.dao.product.TypeDao">
     <resultMap id="type" type="com.orange.bean.product.Type">
-        <result property="id" column="id" />
-        <result property="name" column="name" />
-        <result property="parentId" column="parent_id" />
-        <result property="note" column="note" />
-        <result property="isDisplay" column="is_display" />
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="note" column="note"/>
+        <result property="isDisplay" column="is_display"/>
     </resultMap>
     <!-- Select SQL -->
     <sql id="typeSelector">
@@ -21,13 +21,13 @@
                 and id=#{id}
             </if>
             <if test="name != null">
-                    and  name like "%"#{name}"%"
+                and name like "%"#{name}"%"
             </if>
             <if test="parentId != null">
                 and parent_id!=#{parentId}
             </if>
             <if test="note != null">
-                    and  note like "%"#{note}"%"
+                and note like "%"#{note}"%"
             </if>
             <if test="isDisplay != null">
                 and is_display=#{isDisplay}
@@ -43,7 +43,27 @@
     </sql>
     <!-- 数据集合 -->
     <select id="getTypeList" parameterType="com.orange.bean.product.Type" resultMap="type">
-        <include refid="typeSelector" />
-        <include refid="typeListWhere" />
+        <include refid="typeSelector"/>
+        <include refid="typeListWhere"/>
     </select>
+
+
+    <select id="getCount" parameterType="com.orange.bean.product.Type" resultType="int">
+        SELECT count(1) from t_type
+        <include refid="typeListWhere"/>
+    </select>
+
+    <select id="getTypeListByPage" parameterType="com.orange.bean.product.Type" resultType="type">
+        <include refid="typeSelector"/>
+        <include refid="typeListWhere"/>
+        <include refid="typeListLimit"/>
+    </select>
+
+    <insert id="save" parameterType="com.orange.bean.product.Type">
+        INSERT INTO t_type (name,parent_id,is_display,note) VALUES (#{name},#{parentId},#{isDisplay},#{note})
+    </insert>
+
+    <delete id="delete" parameterType="Integer">
+        DELETE FROM t_type where id=#{id}
+    </delete>
 </mapper>

@@ -90,7 +90,7 @@ public class CarController {
 
             buyItem.setSku(sku);
             //数量  1 2 3  -1
-            buyItem.setAmmount(amount);
+            buyItem.setAmount(amount);
             //添加购物项
             buyCart.addItem(buyItem);
             //最后一款商品的ID
@@ -274,7 +274,7 @@ public class CarController {
                     //
                     Sku sku = skuService.getSkuByKey(it.getSku().getId());
                     //判断库存
-                    if(sku.getStockInventory() < it.getAmmount()){
+                    if(sku.getStockInventory() < it.getAmount()){
                         //删除此商品
                         buyCart.deleteItem(it);
                     }
@@ -313,18 +313,18 @@ public class CarController {
                 }else{
                     //收货地址加载
                     Buyer buyer = (Buyer) request.getSession().getAttribute(Constants.BUYER_SESSION);
-                    Addr addrQuery = new Addr();
-                    //默认是1
-                    addrQuery.setIsDef(1);
-                    if(null == buyer){
-                        addrQuery.setBuyerId("fbb2014");
-                    }else {
-                        addrQuery.setBuyerId(buyer.getUsername());
-                    }
+//                    Addr addrQuery = new Addr();
+//                    //默认是1
+//                    addrQuery.setIsDef(1);
+//                    if(null == buyer){
+//                        addrQuery.setBuyerId("fbb2014");
+//                    }else {
+//                        addrQuery.setBuyerId(buyer.getUsername());
+//                    }
+//
+//                    List<Addr> addrs = addrService.getAddrList(addrQuery);
 
-                    List<Addr> addrs = addrService.getAddrList(addrQuery);
-
-                    model.addAttribute("addr", addrs.get(0));
+                    model.addAttribute("buyer", buyer);
                     //装购物车装满
                     List<BuyItem> its = buyCart.getItems();
                     for(BuyItem item : its){
